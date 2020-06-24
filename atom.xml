@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-06-24T02:48:46.707Z</updated>
+    <title>思源</title>
+    <updated>2020-06-24T03:02:49.914Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>思考是创新的源泉</subtitle>
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 思源</rights>
     <entry>
         <title type="html"><![CDATA[遇见，有时非常偶然……]]></title>
         <id>https://wang-jie-bit.github.io/post/yu-jian-you-shi-fei-chang-ou-ran/</id>
