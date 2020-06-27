@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-06-27T10:10:12.483Z</updated>
+    <updated>2020-06-27T10:21:50.914Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[由上一个设想引发的思考：平流层飞艇在考虑净浮心变化时的上升过程仿真]]></title>
+        <id>https://wang-jie-bit.github.io/study/</id>
+        <link href="https://wang-jie-bit.github.io/study/">
+        </link>
+        <updated>2020-06-27T10:10:33.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[设想：平流层飞艇最优排气方式]]></title>
         <id>https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/</id>
