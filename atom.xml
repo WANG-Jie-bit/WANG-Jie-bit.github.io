@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-06-27T01:38:05.857Z</updated>
+    <updated>2020-06-27T01:54:41.169Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 思源</rights>
     <entry>
         <title type="html"><![CDATA[设想：平流层飞艇最优排气方式]]></title>
-        <id>https://wang-jie-bit.github.io/post/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/</id>
-        <link href="https://wang-jie-bit.github.io/post/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/">
+        <id>https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/</id>
+        <link href="https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/">
         </link>
         <updated>2020-06-25T01:38:49.000Z</updated>
         <summary type="html"><![CDATA[<p>基本假设：<br>
@@ -25,55 +25,24 @@
 1）对于给定的高度，可以确定总氦气体积比（这样也就确定了各分舱室内氦气体积比的约束条件）<br>
 2） 对于给定的俯仰角和氦气体积比，可以确定净浮心的位置<br>
 在此假设条件基础上，将平流层飞艇上升过程可以分为若干节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>H</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>H</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">H_1,H_2,......,H_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（离散化），在每一个高度节点上，可以确定最优的各舱室内氦气体积比，使得在上升过程中，俯仰角最小。</p>
-<!-- more -->
-<p>为了实现上述设想，需要有一个计算模块，可以根据给定的氦气体积比，快速确定稳定俯仰角。对于每一个结构舱室，可以对氦气体积比和俯仰角这两个维度的插值，实现对净浮心的快速计算。</p>
-<p>此外，如果要考虑气动力和气动力矩，那速度这个量就必须要考虑，还有风场，这样的话，问题就显得略微复杂了。需要建立一套完整的运动模型来进行描述。</p>
-<p>一、模型的选择与考虑<br>
-1、六自由度模型<br>
-六自由度模型是可以完整描述平流层飞艇的上升过程的。哪六个自由度呢，从本体坐标系来看，三个运动自由度和三个转动自由度。根据平流层飞艇的运动特点，滚转可以忽略不计，这样可以适当简化问题的分析：三个运动量和两个转动量（俯仰和航向）。三个运动量是必须要有的，这样可以描述飞艇上升的轨迹。俯仰运动是需要描述的，因为净浮心变化主要影响的就是俯仰运动。航向运动也很重要，但不是那么重要，飞艇不同的航向，会影响飞行轨迹。如果考虑风场的影响话，不同的飞行姿态，飞艇受到的气动力是不同的，进而也会影响其运动。<br>
-2、三自由度模型<br>
-在六自由模型的基础上，做一个大胆的假设：<br>
-<em>假设：飞艇在上升过程中处于迎风飞行状态。</em><br>
-在这个假设条件下，航向的问题可以忽略了。这样，可以得到一个更为简单的三自由度模型——仅仅描述飞艇的高度变化问题（这正是分析飞艇上升过程最需要分析的），只需要重点考虑飞艇在上升过程中的的俯仰运动和高度变化问题。<br>
-二、受力分析<br>
-仅考虑纵向运动问题（三自由度模型），飞艇在上升过程中主要受到重力、浮力、气动力和推力。采用“开系统”的角度进行分析（副气囊中空气同外界大气视为等同），所受的重力和浮力可以用结构重力和净浮力来表示。在分析之初，可以先重点分析一下这个净浮力和结构重力的关系，气动力和推力暂时忽略。<br>
-1、氦气质量的确定<br>
-氦气质量的确定根据两个条件1）在压力高度处，氦气胀满整个艇囊2）压力高度处，浮力等于重力。具体的计算细节在这里忽略，仅给出计算结果：（压差取100Pa）<br>
-条件：飞艇体积181200<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>m</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">m^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>，结构质量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>13968</mn><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">13968kg</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord">3</span><span class="mord">9</span><span class="mord">6</span><span class="mord">8</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span><br>
-结果：氦气质量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2285</mn><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">2285kg</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">2</span><span class="mord">2</span><span class="mord">8</span><span class="mord">5</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>，压力高度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>19.9</mn><mi>k</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">19.9km</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">9</span><span class="mord">.</span><span class="mord">9</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">m</span></span></span></span><br>
-注意：如果按照零压差计算，其结果不符合实际情况。因为软式飞艇外形需要通过一定压差来维持，而且根据计算零压差情况下，净浮力不会随高度变化。。。一直和结构重力相等，这样需要推力推上去。<br>
-2、问题分析：在压力高度处，浮力等于重力，那在上升过程中，浮力和重力的关系是？<br>
-主要分析压差存在的情况，给出净浮力的变化曲线：<br>
-<img src="https://wang-jie-bit.github.io/post-images/1593162601263.png" alt="" loading="lazy"><br>
-可以发现，在上升过程中，净浮力是大于结构重力的，净浮力随高度增加而逐渐减小。其实，这也是飞艇能够上升的原因，而且很自然就会停在压力高度处，因为此时净浮力与结构重力相等。这样，就是所谓的无动力上升了吧！根据结果，也会自然而然催生出一种想法：考虑这种无动力上升（不考虑推力控制），飞艇到底会怎样上升？给出仿真曲线，这也就回到老本行了。</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2020年6月24日自省]]></title>
-        <id>https://wang-jie-bit.github.io/post/2020-nian-6-yue-24-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/post/2020-nian-6-yue-24-ri-zi-sheng/">
+        <id>https://wang-jie-bit.github.io/2020-nian-6-yue-24-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-6-yue-24-ri-zi-sheng/">
         </link>
         <updated>2020-06-24T10:24:54.000Z</updated>
-        <content type="html"><![CDATA[<p>转眼间6月已经快要过去了。本来按照原来的安排，6月份要写出一篇论文，尽快将之前的研究工作汇总。结果中途收到了之前净浮心计算那篇文章的拒稿邮件。平心而论，那篇文章其实我投入的精力还是挺多的，回想起来，应该是12月份就着手准备写了，中间经过过年和突如其来的疫情，至3月初稿基本完成。写作时间还算得上正常，投稿和审稿就颇为坎坷。先是投稿的JGCD，副主编说格式不对，要求改格式。格式搞好了，再投，没几天主编说内容不符合期刊的要求，建议投到AIAA旗下的JA。当时我想，虽然折腾，也没有其它的选择，投呗。投出去之后，按照他们的要求，把该准备的材料都准备好了，完成投稿。然后，就是漫长的等待sui……大约是4月多了，距离投稿已经一个多月了，文章仍然没有送审。我感到有些奇怪，经过和导师商量之后，决定给主编写封邮件问一下。结果看起来似乎很顺利，写邮件之后的第二天，主编就回信了，直接要求引用他们期刊的若干文章，然后才能继续投稿。WQNMLGB！这不是明显的作弊吗，为了提高自引率，这种事儿也能做得出来。我当时就对这个期刊的质量表示怀疑，上中科院的分区系统查询，果然，原来是4区的水刊。。。当时抱着已经投了的态度，而且想的是AIAA的分量在业界还是比较有知名度的，这个期刊可能偏向工程应用，中科院的分区参考参考就行。所以，加了几篇（大概6篇）JA的文章引用，还是投出去了。这次果然神速，第二天就送审了。我当时还挺开心，现在想起来确比较清晰了：怎么可能这么快就送审？原因只有一个，那就是主编根本就没看，随便选了两个审稿人。。。<br>
-等了一个月左右，收到的却是拒稿邮件。给出的评审意见根本没有参考意义，只是单纯说创新性不足。我也在自我反省，到底什么是创新。还是记得当初上哲学课是，那老师说过，创新就是对原有理论的颠覆，或者是修正。这篇文章或许谈不上对现有理论的颠覆，或许也没有所谓的修正，但是具有工程应用的意义。自己也的确倾注了些心血的。就这样被否定了，而且是不负责任的否定，我表示难过。<br>
-也许，根本没有我想象得那么复杂，就像导师说的那样，换一个再投就是了。我内心却是有点过不去，这不，最近一直在改进。现在想想，或许，现在做的这些努力，在别人眼里，也是一种徒劳的。真的可能存在这样可能，这样的改下去没有个尽头，再好的千里马也需要伯乐。但是，于我而言，我能够做的，便是“尽人事，听天命”了，再坚持一下，再完善一次，保证在我手里没有问题。<br>
-6月即将过去，我原来打算写完的那篇文章，已经有一段时间没看了。还是抽出时间整整，哪怕是一小会儿，时间是宝贵的，不要去浪费。<br>
-<img src="https://wang-jie-bit.github.io/post-images/1592996381900.jpg" alt="" loading="lazy"><br>
-还有，最近看文章的功夫还是得加强，不接受新的思想，思想就会变得保守和落后。简历制作的工作也应该逐步展开了。</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[遇见，有时非常偶然……]]></title>
-        <id>https://wang-jie-bit.github.io/post/yu-jian-you-shi-fei-chang-ou-ran/</id>
-        <link href="https://wang-jie-bit.github.io/post/yu-jian-you-shi-fei-chang-ou-ran/">
+        <id>https://wang-jie-bit.github.io/yu-jian-you-shi-fei-chang-ou-ran/</id>
+        <link href="https://wang-jie-bit.github.io/yu-jian-you-shi-fei-chang-ou-ran/">
         </link>
         <updated>2020-06-24T02:44:06.000Z</updated>
         <summary type="html"><![CDATA[<p>之前曾经一直想着创建一个微信公众号，简单写一点自己在读书和写论文时的一些感悟。后来，偶然发现了个人网站，兴趣瞬间就被它吸引了：Gridea+github，使用起来也非常简单。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>之前曾经一直想着创建一个微信公众号，简单写一点自己在读书和写论文时的一些感悟。后来，偶然发现了个人网站，兴趣瞬间就被它吸引了：Gridea+github，使用起来也非常简单。</p>
-<!-- more -->
-<p><img src="https://wang-jie-bit.github.io/post-images/1592968185024.jpg" alt="" loading="lazy"><br>
-好了，那么就从今天开启了撰写个人博客之旅吧！</p>
 ]]></content>
     </entry>
 </feed>
