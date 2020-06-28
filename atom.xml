@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-06-27T10:21:50.914Z</updated>
+    <updated>2020-06-28T12:38:40.190Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[尴尬：好不容易想出一个点子，又发现有人做过了]]></title>
+        <id>https://wang-jie-bit.github.io/gan-ga-20200628/</id>
+        <link href="https://wang-jie-bit.github.io/gan-ga-20200628/">
+        </link>
+        <updated>2020-06-28T12:16:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[由上一个设想引发的思考：平流层飞艇在考虑净浮心变化时的上升过程仿真]]></title>
         <id>https://wang-jie-bit.github.io/study/</id>
