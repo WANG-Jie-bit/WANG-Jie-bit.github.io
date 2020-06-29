@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-06-28T12:38:40.190Z</updated>
+    <updated>2020-06-29T13:19:39.884Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[仿真框架的基本设想]]></title>
+        <id>https://wang-jie-bit.github.io/fang-zhen-kuang-jia-de-ji-ben-she-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/fang-zhen-kuang-jia-de-ji-ben-she-xiang/">
+        </link>
+        <updated>2020-06-28T12:39:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[尴尬：好不容易想出一个点子，又发现有人做过了]]></title>
         <id>https://wang-jie-bit.github.io/gan-ga-20200628/</id>

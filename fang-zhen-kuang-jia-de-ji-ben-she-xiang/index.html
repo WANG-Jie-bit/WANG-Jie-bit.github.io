@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>遇见，有时非常偶然…… | 思源</title>
+<title>仿真框架的基本设想 | 思源</title>
 <link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1593436748656">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
@@ -64,25 +64,42 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              遇见，有时非常偶然……
+              仿真框架的基本设想
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2020-06-24 ·
+                · 2020-06-28 ·
               </time>
               
             </div>
             
             <div class="post-content">
-              <p>之前曾经一直想着创建一个微信公众号，简单写一点自己在读书和写论文时的一些感悟。后来，偶然发现了个人网站，兴趣瞬间就被它吸引了：Gridea+github，使用起来也非常简单。</p>
+              <p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
 <!-- more -->
-<p><img src="https://wang-jie-bit.github.io/post-images/1592968185024.jpg" alt="" loading="lazy"><br>
-好了，那么就从今天开启了撰写个人博客之旅吧！</p>
+<p>在考虑净浮心变化时，对平流层飞艇上升过程进行仿真程序编写。考虑计算效率的问题，准备采用C语言进行程序的编写。在搭建仿真程序之前，对程序的基本模块进行初步的设想。主要可以分为五大模块：主函数模块、积分模块、动力学模块、数据输出模块和净浮心计算模块。其基本流程如下：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1593349924774.jpg" alt="" loading="lazy"><br>
+话不多说，动手编起来！<br>
+一、排气策略模块<br>
+目前，可以先采用一种简单的排气策略：初始设定各舱室内体积比，排气时，根据各舱体积，按比例排气。简单的说，排气策略模块的基本功能是根据当前高度，确定各舱室氦气体积比。<br>
+函数名称：pressureRegModel<br>
+函数输入：当前高度<br>
+函数输出：各舱室氦气体积比<br>
+至于如何根据当前高度，确定各舱室内氦气体积比，这部分内容将在一篇论文中详细阐述。这里先略去。<br>
+在编写的过程中，顺便复习了C语言中有关头文件和全局变量的定义。为此，引入了头文件ascentPro.h和全局变量定义文件globalV.cpp</p>
 
             </div>
           </article>
         </div>
     
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/gan-ga-20200628/">
+              <h3 class="post-title">
+                尴尬：好不容易想出一个点子，又发现有人做过了
+              </h3>
+            </a>
+          </div>  
         
 
         
