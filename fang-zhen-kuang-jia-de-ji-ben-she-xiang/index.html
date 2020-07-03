@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>仿真框架的基本设想 | 思源</title>
-<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1593436748656">
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1593737985894">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
 
@@ -22,7 +22,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://wang-jie-bit.github.io">
-  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1593436748656" alt="">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1593737985894" alt="">
   </a>
   <h1 class="site-title">
     思源
@@ -85,7 +85,12 @@
 函数输入：当前高度<br>
 函数输出：各舱室氦气体积比<br>
 至于如何根据当前高度，确定各舱室内氦气体积比，这部分内容将在一篇论文中详细阐述。这里先略去。<br>
-在编写的过程中，顺便复习了C语言中有关头文件和全局变量的定义。为此，引入了头文件ascentPro.h和全局变量定义文件globalV.cpp</p>
+在编写的过程中，顺便复习了C语言中有关头文件和全局变量的定义。为此，引入了头文件ascentPro.h和全局变量定义文件globalV.cpp<br>
+二、净浮心计算模块<br>
+净浮心计算模块的主要功能是根据当前俯仰角和氦气体积比，计算净浮心和转动惯量的位置。<br>
+函数名称：arbSegShip<br>
+函数输入：俯仰角<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span>和各舱室氦气体积比<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>λ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><br>
+函数输出：净浮心位置和转动惯量</p>
 
             </div>
           </article>
