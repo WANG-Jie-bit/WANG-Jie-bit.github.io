@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-06T00:17:05.002Z</updated>
+    <updated>2020-07-06T03:36:48.918Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[上升过程的仿真程序基本编写完毕]]></title>
+        <id>https://wang-jie-bit.github.io/shang-sheng-guo-cheng-de-fang-zhen-cheng-xu-ji-ben-bian-xie-wan-bi/</id>
+        <link href="https://wang-jie-bit.github.io/shang-sheng-guo-cheng-de-fang-zhen-cheng-xu-ji-ben-bian-xie-wan-bi/">
+        </link>
+        <updated>2020-07-06T02:59:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>经过这两天编写，描述上升过程的仿真程序基本完成。编写的过程中，主要参考了本科毕业设计时编写的那个程序。时光荏苒，已经四年多了，这次再一次重温。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>经过这两天编写，描述上升过程的仿真程序基本完成。编写的过程中，主要参考了本科毕业设计时编写的那个程序。时光荏苒，已经四年多了，这次再一次重温。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[右端函数的编写]]></title>
         <id>https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/</id>
@@ -106,16 +117,5 @@
         <link href="https://wang-jie-bit.github.io/2020-nian-6-yue-24-ri-zi-sheng/">
         </link>
         <updated>2020-06-24T10:24:54.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[遇见，有时非常偶然……]]></title>
-        <id>https://wang-jie-bit.github.io/yu-jian-you-shi-fei-chang-ou-ran/</id>
-        <link href="https://wang-jie-bit.github.io/yu-jian-you-shi-fei-chang-ou-ran/">
-        </link>
-        <updated>2020-06-24T02:44:06.000Z</updated>
-        <summary type="html"><![CDATA[<p>之前曾经一直想着创建一个微信公众号，简单写一点自己在读书和写论文时的一些感悟。后来，偶然发现了个人网站，兴趣瞬间就被它吸引了：Gridea+github，使用起来也非常简单。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>之前曾经一直想着创建一个微信公众号，简单写一点自己在读书和写论文时的一些感悟。后来，偶然发现了个人网站，兴趣瞬间就被它吸引了：Gridea+github，使用起来也非常简单。</p>
-]]></content>
     </entry>
 </feed>

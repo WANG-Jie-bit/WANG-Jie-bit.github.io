@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>由上一个设想引发的思考：平流层飞艇在考虑净浮心变化时的上升过程仿真 | 思源</title>
+<title>上升过程的仿真程序基本编写完毕 | 思源</title>
 <link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1594006458844">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
@@ -64,28 +64,33 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              由上一个设想引发的思考：平流层飞艇在考虑净浮心变化时的上升过程仿真
+              上升过程的仿真程序基本编写完毕
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2020-06-27 ·
+                · 2020-07-06 ·
               </time>
-              
-                <a href="https://wang-jie-bit.github.io/1l39cq6FU/" class="post-tags">
-                  # 科研论文
-                </a>
               
             </div>
             
-              <div class="post-feature-image" style="background-image: url('https://wang-jie-bit.github.io/post-images/study.png')">
-              </div>
-            
             <div class="post-content">
-              <!-- more -->
-<p>由对平流层飞艇最优排气问题的思考，逐渐引出来一个问题：在考虑气动作用的条件下，平流层飞艇无动力上升的过程，可否通过仿真来实现？如果可以实现，那么就可以进一步研究两个问题：<br>
-1）多舱室和单舱室的仿真结果对比，显示出多舱室的优越性<br>
-2）以三副气囊结构为例，如何调整副气囊中的氦气体积比，从而达到控制俯仰角的目的<br>
-控制俯仰角的最终目的也是为了控制上升速度，大俯仰角会使得上升时攻角太小，气动阻力小，所以上升速度快。通过改变氦气体积比，可以控制俯仰角，进而可以控制上升速度。那么，通过经典控制理论中的反馈控制，能否给出答案？</p>
+              <p>经过这两天编写，描述上升过程的仿真程序基本完成。编写的过程中，主要参考了本科毕业设计时编写的那个程序。时光荏苒，已经四年多了，这次再一次重温。</p>
+<!-- more -->
+<p>在基本编写程序之后，先给出一些基本的结果。初始俯仰角为50°，初始高度为0m，结果如下：<br>
+（1）俯仰角<br>
+<img src="https://wang-jie-bit.github.io/post-images/1594005648945.jpg" alt="" loading="lazy"><br>
+（2）高度<br>
+<img src="https://wang-jie-bit.github.io/post-images/1594005698100.jpg" alt="" loading="lazy"><br>
+（3）攻角<br>
+<img src="https://wang-jie-bit.github.io/post-images/1594005769757.jpg" alt="" loading="lazy"><br>
+可以发现在上升过程中攻角是负值，这是符合预期的。攻角的大小不是很大，可能受是气动恢复力矩的影响。</p>
+<p>在这个模型的基础上，可以进一步完善的部分有：<br>
+1、初始俯仰角的确定<br>
+根据现有的氦气体积比，确定此时的稳定俯仰角。这是一个配平问题，可以根据之前的研究结果直接给出。这里需要编写一个模块，来进行初始俯仰角的计算。<br>
+2、分析气动的影响<br>
+气动的影响到底有多大？分析气动力在飞艇上升过程中的主要作用。<br>
+3、多舱室和单舱室的仿真结果对比，显示出多舱室的优越性</p>
+<p>基本的验证平台搭建起来之后，就需要作进一步的思考。</p>
 
             </div>
           </article>
@@ -94,9 +99,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/">
+            <a href="https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/">
               <h3 class="post-title">
-                设想：平流层飞艇最优排气方式
+                右端函数的编写
               </h3>
             </a>
           </div>  
