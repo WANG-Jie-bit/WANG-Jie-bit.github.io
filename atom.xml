@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-04T15:26:37.485Z</updated>
+    <updated>2020-07-06T00:17:05.002Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[右端函数的编写]]></title>
+        <id>https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/</id>
+        <link href="https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/">
+        </link>
+        <updated>2020-07-05T03:11:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>这一部分的工作比较繁琐，可以分为几个部分，逐步解决。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这一部分的工作比较繁琐，可以分为几个部分，逐步解决。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数值积分方法的测试]]></title>
+        <id>https://wang-jie-bit.github.io/shu-zhi-ji-fen-fang-fa-de-ce-shi/</id>
+        <link href="https://wang-jie-bit.github.io/shu-zhi-ji-fen-fang-fa-de-ce-shi/">
+        </link>
+        <updated>2020-07-05T02:21:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>昨天简单复习了数值积分方法，今天编写一个小程序再测试一下。虽然以前都编过了，程序在实验室的电脑里😂，再写一遍也倒是不难，权当复习吧。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>昨天简单复习了数值积分方法，今天编写一个小程序再测试一下。虽然以前都编过了，程序在实验室的电脑里😂，再写一遍也倒是不难，权当复习吧。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[向着仿真更近一步]]></title>
         <id>https://wang-jie-bit.github.io/xiang-zhao-fang-zhen-geng-jin-yi-bu/</id>
