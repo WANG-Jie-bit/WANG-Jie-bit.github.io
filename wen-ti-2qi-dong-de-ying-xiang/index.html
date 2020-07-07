@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>尴尬：好不容易想出一个点子，又发现有人做过了 | 思源</title>
+<title>问题2：气动的影响 | 思源</title>
 <link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1594093474110">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
@@ -64,24 +64,30 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              尴尬：好不容易想出一个点子，又发现有人做过了
+              问题2：气动的影响
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2020-06-28 ·
+                · 2020-07-07 ·
               </time>
               
             </div>
             
-              <div class="post-feature-image" style="background-image: url('https://wang-jie-bit.github.io/post-images/gan-ga-20200628.jpg')">
-              </div>
-            
             <div class="post-content">
-              <p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
+              <p>对气动的影响进行分析，验证一下之前忽略气动的假设是否合理。</p>
 <!-- more -->
-<p>之前看到过知乎上一个话题：博士生容易有的错觉。其中有一条便是，“我有一个新点子，别人肯定没想到”，看来我也踩坑了。仔细回想一下，之前写论文都是找一个研究的热点，其实模型都是别人建立好的，需要做的就是换个方法，然后做做仿真，和别的方法比较一下证明自己的方法好就是了。这样也许真的是出论文的好办法，因为不需要对问题进行细致的研究，也不需要对模型建立进行研究，只要想想有什么好的方法可以用上来就行。<br>
-我其实也有点不知所措。因为我也想这样做（有利可图），但也想做一点真正的研究工作。其实从长远来看，这两者是不冲突的，可是现在的阶段存在着一种短平快的节奏，所以我很困惑。<br>
-不过，又何必顾虑这么多呢，有点子总比没有强。踏踏实实沿着这个思路走一走，或许有困难，但是就是想知道到底是怎样的一种结果：到底是怎样上升的，气动力的影响到底有多大，这个过程还能做哪些工作？ 就是简单的想一想，损害能有多大？</p>
+<p>气动的影响主要体现在气动力和气动力矩，它们都与速度和攻角有关。经过对仿真结果的初步分析，发现速度和攻角都不是很大。初步猜测气动的影响不是那么大。。可以按照以下的几个方面进行分析。<br>
+1、忽略气动力<br>
+2、忽略气动力+气动力矩<br>
+3、什么都不忽略<br>
+简单的对比结果如下：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1594091247088.jpg" alt="" loading="lazy"><br>
+可以发现，对于上升阶段的仿真来说，气动的作用还是很明显。不考虑气动力和力矩，会造成快速上升的问题，不符合实际。<br>
+需要说明的是，上述分析只是在仿真模型的基础上进行的初步分析。忽略气动力而只考虑气动力矩这种情况没有什么实际意义。所得的结论也只是根据结果初步得出的，至于到底有没有道理，现在也说不太清楚，随着研究的深入再逐渐解释。</p>
+<!-- more -->
+<p>突然想到，分析气动的影响也可以这样做：打个常值舵。分别分析打10°，0°和-10°的舵，看看对上升阶段的结果影响：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1594093385965.jpg" alt="" loading="lazy"><br>
+可以发现，结果是符合预期的。打正舵抬头，打负舵低头。这个结果在一定程度上说明，在上升阶段考虑气动控制还是有一定必要性的。</p>
 
             </div>
           </article>
@@ -90,9 +96,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://wang-jie-bit.github.io/study/">
+            <a href="https://wang-jie-bit.github.io/wen-ti-1chu-shi-fu-yang-jiao-de-que-ding/">
               <h3 class="post-title">
-                由上一个设想引发的思考：平流层飞艇在考虑净浮心变化时的上升过程仿真
+                问题1：初始俯仰角的确定
               </h3>
             </a>
           </div>  

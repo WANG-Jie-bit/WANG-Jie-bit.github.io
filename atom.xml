@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-06T07:33:33.268Z</updated>
+    <updated>2020-07-07T03:45:50.652Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[问题2：气动的影响]]></title>
+        <id>https://wang-jie-bit.github.io/wen-ti-2qi-dong-de-ying-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/wen-ti-2qi-dong-de-ying-xiang/">
+        </link>
+        <updated>2020-07-07T02:33:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>对气动的影响进行分析，验证一下之前忽略气动的假设是否合理。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>对气动的影响进行分析，验证一下之前忽略气动的假设是否合理。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[问题1：初始俯仰角的确定]]></title>
+        <id>https://wang-jie-bit.github.io/wen-ti-1chu-shi-fu-yang-jiao-de-que-ding/</id>
+        <link href="https://wang-jie-bit.github.io/wen-ti-1chu-shi-fu-yang-jiao-de-que-ding/">
+        </link>
+        <updated>2020-07-07T01:23:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>初始俯仰角在上升阶段是一个重要的参数。重点从配平的角度去考虑初始俯仰角该如何确定。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>初始俯仰角在上升阶段是一个重要的参数。重点从配平的角度去考虑初始俯仰角该如何确定。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[上升过程的仿真程序基本编写完毕]]></title>
         <id>https://wang-jie-bit.github.io/shang-sheng-guo-cheng-de-fang-zhen-cheng-xu-ji-ben-bian-xie-wan-bi/</id>
@@ -93,29 +115,5 @@
         <link href="https://wang-jie-bit.github.io/study/">
         </link>
         <updated>2020-06-27T10:10:33.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[设想：平流层飞艇最优排气方式]]></title>
-        <id>https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/</id>
-        <link href="https://wang-jie-bit.github.io/she-xiang-ping-liu-ceng-fei-ting-zui-you-pai-qi-fang-shi/">
-        </link>
-        <updated>2020-06-25T01:38:49.000Z</updated>
-        <summary type="html"><![CDATA[<p>基本假设：<br>
-1）对于给定的高度，可以确定总氦气体积比（这样也就确定了各分舱室内氦气体积比的约束条件）<br>
-2） 对于给定的俯仰角和氦气体积比，可以确定净浮心的位置<br>
-在此假设条件基础上，将平流层飞艇上升过程可以分为若干节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>H</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>H</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">H_1,H_2,......,H_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（离散化），在每一个高度节点上，可以确定最优的各舱室内氦气体积比，使得在上升过程中，俯仰角最小。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>基本假设：<br>
-1）对于给定的高度，可以确定总氦气体积比（这样也就确定了各分舱室内氦气体积比的约束条件）<br>
-2） 对于给定的俯仰角和氦气体积比，可以确定净浮心的位置<br>
-在此假设条件基础上，将平流层飞艇上升过程可以分为若干节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>H</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>H</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">H_1,H_2,......,H_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（离散化），在每一个高度节点上，可以确定最优的各舱室内氦气体积比，使得在上升过程中，俯仰角最小。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020年6月24日自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-6-yue-24-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-6-yue-24-ri-zi-sheng/">
-        </link>
-        <updated>2020-06-24T10:24:54.000Z</updated>
     </entry>
 </feed>
