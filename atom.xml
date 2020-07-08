@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-08T00:59:21.635Z</updated>
+    <updated>2020-07-08T08:33:44.266Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（1）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-1/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-1/">
+        </link>
+        <updated>2020-07-08T07:00:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近，在专心写论文的同时，也需要开始着手为找工作做准备了。为了应对即将到来的各种笔试和面试工作，需要对专业知识进行有条理的复习。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近，在专心写论文的同时，也需要开始着手为找工作做准备了。为了应对即将到来的各种笔试和面试工作，需要对专业知识进行有条理的复习。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[有关驻留轨迹规划问题的初步设想]]></title>
         <id>https://wang-jie-bit.github.io/station-keeping-design/</id>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[尴尬：好不容易想出一个点子，又发现有人做过了]]></title>
-        <id>https://wang-jie-bit.github.io/gan-ga-20200628/</id>
-        <link href="https://wang-jie-bit.github.io/gan-ga-20200628/">
-        </link>
-        <updated>2020-06-28T12:16:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
 ]]></content>
     </entry>
 </feed>
