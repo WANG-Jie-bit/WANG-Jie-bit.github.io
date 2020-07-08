@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>有关驻留轨迹规划问题的初步设想 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1594169918139">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1594169918139" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              有关驻留轨迹规划问题的初步设想
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-08 ·
+              </time>
+              
+                <a href="https://wang-jie-bit.github.io/1l39cq6FU/" class="post-tags">
+                  # 科研论文
+                </a>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>这些天开始正式着手准备驻留轨迹规划问题的研究，之前也做过一些思考，现在整理整理一些基本的思路。</p>
+<!-- more -->
+<p>驻留轨迹规划问题是一直以来都想研究的问题，但是由于种种不得已的原因，一直都处于被搁置的状态。之前一直觉得棘手的热力学模型也初步建立起来，这当然不是重点，但也算得上为前进的道路铺上了一个台阶。接下来，这个历史遗留问题终于要上场了。<br>
+今天初步整理一下基本的思路。对于一个问题的研究，最为重要的无外乎三个方面：研究一个什么问题？建立什么模型？采用什么方法？下面将根据这三个角度，简单谈一谈初步的设想。<br>
+一、研究的问题<br>
+很像论文摘要里面的叙述，首先需要明确的就是研究的问题是什么。驻留轨迹规划是为了解决平流层飞艇在长航时飞行时，在定区域驻留时，最优飞行轨迹的规划问题。本质上讲还是一类典型的轨迹优化问题。既然是优化问题，很直接的就会想到，优化什么呢？这里主要考虑的是飞行时的能量问题。<br>
+1、能量的消耗<br>
+经过之前的研究工作，发现平流层飞艇在驻留时，受太阳辐射引起的温度变化，会对飞艇的飞行性能造成一定的影响。温度会影响浮重平衡，需要考虑采用推力去抵消。这样就会消耗一部分能量。此外，当考虑风场的影响时，为了保证飞艇在一定区域内运动，也需要一定的推力来维持，同样需要消耗能量。如何使得这样的能量消耗最小，就是一个需要考虑的问题。<br>
+2、能量的产生<br>
+太阳辐射的能量可以被飞艇上面的太阳能电池阵列吸收并转换为电能。飞艇的运动姿态会影响太阳能的吸收。如何使得飞艇在驻留期间吸收的太阳能最多，也是一个需要考虑的问题。<br>
+二、建立的模型<br>
+初步设想采用一种双模型：计算模型和仿真模型。考虑的模型包括描述飞艇运动的动力学模型和描述温度变化的热力学模型。在计算模型中，对动力学模型进行线性化处理，热力学暂不考虑，可以认为温度不变；在仿真模型中，采用完整的动力学模型和热力学模型。<br>
+三、基本的方案<br>
+上述模型的选取和长航时驻留飞行的特点，很自然会想到模型预测控制方法，即采用滚动时域优化的方法，走一步优化一次，直至结束。优化的时间间隔不宜选取的太长，这样线性化模型和温度不变的假设就不成立了。考虑到飞艇是一种低速低动态飞行器，采用较长得仿真步长和控制周期是完全可行得。优化计算可以采用凸优化的方法。因此，基本的方法是基于凸优化+模型预测的结构框架来进行设计和验证。</p>
+<p>作为一种初步的设想，在后期的研究过程中，可能存在一定的问题，根据实际情况进行修正。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/you-guan-zhu-liu-gui-ji-gui-hua-wen-ti-de-chu-bu-she-xiang/">
+              <h3 class="post-title">
+                有关驻留轨迹规划问题的初步设想
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
