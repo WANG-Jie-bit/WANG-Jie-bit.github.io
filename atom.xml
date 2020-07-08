@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-08T00:58:48.021Z</updated>
+    <updated>2020-07-08T00:59:21.635Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -14,17 +14,6 @@
         <title type="html"><![CDATA[有关驻留轨迹规划问题的初步设想]]></title>
         <id>https://wang-jie-bit.github.io/station-keeping-design/</id>
         <link href="https://wang-jie-bit.github.io/station-keeping-design/">
-        </link>
-        <updated>2020-07-08T00:12:44.000Z</updated>
-        <summary type="html"><![CDATA[<p>这些天开始正式着手准备驻留轨迹规划问题的研究，之前也做过一些思考，现在整理整理一些基本的思路。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这些天开始正式着手准备驻留轨迹规划问题的研究，之前也做过一些思考，现在整理整理一些基本的思路。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有关驻留轨迹规划问题的初步设想]]></title>
-        <id>https://wang-jie-bit.github.io/you-guan-zhu-liu-gui-ji-gui-hua-wen-ti-de-chu-bu-she-xiang/</id>
-        <link href="https://wang-jie-bit.github.io/you-guan-zhu-liu-gui-ji-gui-hua-wen-ti-de-chu-bu-she-xiang/">
         </link>
         <updated>2020-07-08T00:12:44.000Z</updated>
         <summary type="html"><![CDATA[<p>这些天开始正式着手准备驻留轨迹规划问题的研究，之前也做过一些思考，现在整理整理一些基本的思路。</p>
@@ -118,6 +107,17 @@
         <summary type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>主要是针对平流层飞艇上升过程仿真进行初步的设想和基本的工作安排</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[尴尬：好不容易想出一个点子，又发现有人做过了]]></title>
+        <id>https://wang-jie-bit.github.io/gan-ga-20200628/</id>
+        <link href="https://wang-jie-bit.github.io/gan-ga-20200628/">
+        </link>
+        <updated>2020-06-28T12:16:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>按照之前的设想，想对平流层飞艇无动力上升做一点研究工作，今天偶然翻翻论文，就已经发现有其他作者研究过了，而且研究的思路基本一致😅</p>
 ]]></content>
     </entry>
 </feed>
