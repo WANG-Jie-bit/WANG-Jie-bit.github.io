@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>精工：专业知识复习（2） | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1594348345953">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1594348345953" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              精工：专业知识复习（2）
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-09 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>今天正式开始复习。万事开头难，总得讲究一些章法。这些专业知识不比数学，不是记住几个公式，运用什么定理就能掌握，往往涉及到实际的应用背后的概念，才是最为核心的东西。经过上一章的整理，主要复习的内容可以分为三个方面的内容：控制理论、飞行器动力学与控制设计和半实物仿真，这三个部分不区分开，而准备作为一个整体逐步进行复习。</p>
+<!-- more -->
+<p>如何才能作为一个整体呢？我认为莫不是从零开始走一遍流程了。现在假设有这样一个情况：拿到了某某数据，要求为其设计一整套制导控制系统，并完成半实物仿真实验，应该如何着手完成任务？<br>
+一个基本的思路就是：飞行器动力学建模、编写数学仿真程序、设计自动驾驶仪、弹道&amp;制导律设计、半实物仿真系统搭建、半实物仿真流程等。其中，设计自动驾驶仪就是控制理论在飞行器控制领域内的应用，这一部分内容不少，这里没有展开。不妨就沿着这个思路捋一遍，查漏补缺。</p>
+<p>第一部分：飞行器动力学建模<br>
+一般情况下，在介绍飞行器建模之前，都是需要定义坐标系的。然后，根据牛顿第二定律给出在指定坐标系中的方程。至此，动力学建模基本完毕。<br>
+1、坐标系<br>
+作为基础部分，坐标系及其定义是非常重要的。最好能够参考一下飞行力学。<br>
+坐标系的定义体系一般是分为两种：苏联体系和欧美体系。本质上不同的体系不会有太大的影响，是使用习惯的问题。这里不作明显的区分。在一般的教材中，坐标系之前的变化采用欧拉角来描述，但是存在一定的问题：当俯仰角为90°时，这种描述方法不适用！因而出现了四元数法，相关的复习将放在后续部分。</p>
+<p>一般情况下，地面坐标系常常用来表示飞行器的运动轨迹，是典型的惯性坐标系。在苏联体系中一般定义为北天东（x轴指北、y轴指天、z轴指东）。在欧美体系中，一般定义为北东地（x轴指北、y轴指东、z轴指地）。下面的坐标系均默认以苏联体系作为介绍。<br>
+基于这两种定义的不同，相应的本体坐标系的定义也略有差别。这里不再详细介绍。本体坐标系是与飞行器本体固连，是非惯性坐标系，随飞行器一起运动。飞行器上面传感器得到的数据，就是表示在本体坐标系中的，例如陀螺仪测量的角速度和加速度计测量的过载。本体坐标系和地面坐标系之间的角度关系，本质上就是飞行器的飞行姿态。飞行姿态指的就是俯仰角、偏航角和滚转角，它们都是可以通过惯性器件测量得到。<br>
+发射坐标系也是一种常见的惯性坐标系，在地面的基础上旋转一个角度。发射坐标系的x轴指向发射点和目标点的连线。仅此而已，其它轴的定义与地面坐标系类似。<br>
+速度坐标系用来描述速度，x轴指向速度方向，y轴在纵向对称面内，与x轴垂直并指向上。速度坐标系与本体坐标系的关系，本质上是为了描述来流与本体的的关系，即采用攻角和侧滑角来描述。这种关系直接决定了飞行器所受的气动力，对于大气层内的飞行器来说就是飞行的基础，非常重要。<br>
+采用弹道坐标系来描述速度矢量在惯性空间的基本方位，用两个角度来描述：弹道倾角和弹道偏角。</p>
+<p>在飞行力学书中，对上述坐标系进行了标号，这也是老一辈航空航天科研工作者习惯的表示方法。这里也复习一下：地面坐标系（xyz）、弹体坐标系（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><msub><mi>y</mi><mn>1</mn></msub><msub><mi>z</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">x_1y_1z_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>）、弹道坐标系（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><msub><mi>y</mi><mn>2</mn></msub><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_2y_2z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>）、速度坐标系（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>3</mn></msub><msub><mi>y</mi><mn>3</mn></msub><msub><mi>z</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">x_3y_3z_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>）</p>
+<p>上述的坐标系在课本上介绍的非常详细了，包括每个轴的定义和坐标系之间的转换关系。我这里就不班门弄斧了。介绍了这么多坐标系，到底有什么用呢？我想最大的用处就是用来表示方程了。什么方程呢？运动学方程真的没什么可说的，本质上就是给定速度和角速度来求距离和角度，积分就完了！重点还是在于动力学的推导。</p>
+<p>动力学方程描述的力和加速度的关系，可以直接套用牛顿第二定律得到。听起来很简单，但<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F=ma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span></span></span></span>是只适用于惯性坐标系的，也就是上面的地面坐标系和发射坐标系这类的坐标系。然后，飞行的受力，表示在地面坐标系就非常复杂了，因为一个运动起来的物体，受到的气动力和推力都是和物体的姿态有关的。为了方便表示气动力，有两种坐标系可用：本体坐标系和弹道坐标系。这两个坐标系的选取取决于气动数据是怎么给的，飞行力学书上就是采用后者，因为气动力一般表示为升力、阻力和侧向力；在研究飞艇的建模中，发现气动力一般是表示在本体系中的，即轴向、法向和侧向力。考虑上述因素，动力学也一般表示在本体坐标系或者弹道坐标系。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-1/">
+              <h3 class="post-title">
+                精工：专业知识复习（1）
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
