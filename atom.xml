@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-10T02:32:39.755Z</updated>
+    <updated>2020-07-12T13:51:55.579Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[2020年7月12日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-12-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-12-ri-zi-sheng/">
+        </link>
+        <updated>2020-07-12T13:07:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>不知不觉中，7月已到中旬。之前提到，目前阶段主要有三个问题需要考虑。经过这一阶段的思考和尝试，今天对这三个问题进行一下总结和反思。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>不知不觉中，7月已到中旬。之前提到，目前阶段主要有三个问题需要考虑。经过这一阶段的思考和尝试，今天对这三个问题进行一下总结和反思。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（5）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-5/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-5/">
+        </link>
+        <updated>2020-07-12T00:02:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天开始复习线性化问题。对于如此复杂的非线性参数时变的动力学模型，只能够在一定程度上模拟真实飞行器的模型，但是对于控制系统设计却显得十分复杂。通过线性化处理，在线性模型的基础上进行设计，就方便的多。线性化究竟是一个怎样的过程呢？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天开始复习线性化问题。对于如此复杂的非线性参数时变的动力学模型，只能够在一定程度上模拟真实飞行器的模型，但是对于控制系统设计却显得十分复杂。通过线性化处理，在线性模型的基础上进行设计，就方便的多。线性化究竟是一个怎样的过程呢？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（4）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi/">
+        </link>
+        <updated>2020-07-11T09:17:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天主要复习飞行器在飞行过程中受到的力和力矩。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天主要复习飞行器在飞行过程中受到的力和力矩。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[精工：专业知识复习（3）]]></title>
         <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-3/</id>
@@ -85,39 +118,6 @@
         <summary type="html"><![CDATA[<p>经过这两天编写，描述上升过程的仿真程序基本完成。编写的过程中，主要参考了本科毕业设计时编写的那个程序。时光荏苒，已经四年多了，这次再一次重温。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>经过这两天编写，描述上升过程的仿真程序基本完成。编写的过程中，主要参考了本科毕业设计时编写的那个程序。时光荏苒，已经四年多了，这次再一次重温。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[右端函数的编写]]></title>
-        <id>https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/</id>
-        <link href="https://wang-jie-bit.github.io/you-duan-han-shu-de-bian-xie/">
-        </link>
-        <updated>2020-07-05T03:11:21.000Z</updated>
-        <summary type="html"><![CDATA[<p>这一部分的工作比较繁琐，可以分为几个部分，逐步解决。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这一部分的工作比较繁琐，可以分为几个部分，逐步解决。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[数值积分方法的测试]]></title>
-        <id>https://wang-jie-bit.github.io/shu-zhi-ji-fen-fang-fa-de-ce-shi/</id>
-        <link href="https://wang-jie-bit.github.io/shu-zhi-ji-fen-fang-fa-de-ce-shi/">
-        </link>
-        <updated>2020-07-05T02:21:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>昨天简单复习了数值积分方法，今天编写一个小程序再测试一下。虽然以前都编过了，程序在实验室的电脑里😂，再写一遍也倒是不难，权当复习吧。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>昨天简单复习了数值积分方法，今天编写一个小程序再测试一下。虽然以前都编过了，程序在实验室的电脑里😂，再写一遍也倒是不难，权当复习吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[向着仿真更近一步]]></title>
-        <id>https://wang-jie-bit.github.io/xiang-zhao-fang-zhen-geng-jin-yi-bu/</id>
-        <link href="https://wang-jie-bit.github.io/xiang-zhao-fang-zhen-geng-jin-yi-bu/">
-        </link>
-        <updated>2020-07-04T14:01:21.000Z</updated>
-        <summary type="html"><![CDATA[<p>开始着手准备编写数值积分模块和微分方程模块，理论上讲应该是现成的，但是比较繁琐，还是一步一步来的好。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>开始着手准备编写数值积分模块和微分方程模块，理论上讲应该是现成的，但是比较繁琐，还是一步一步来的好。</p>
 ]]></content>
     </entry>
 </feed>
