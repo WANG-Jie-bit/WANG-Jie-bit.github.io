@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-17T03:01:25.643Z</updated>
+    <updated>2020-07-19T10:49:13.335Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[2020年7月19日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-19-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-19-ri-zi-sheng/">
+        </link>
+        <updated>2020-07-19T09:59:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>这几日每天都在看一些有关向量场制导方面的文章，可是总是觉得看得不是特别深入，由此感到十分的困惑——似乎走进了一个死胡同。今天走在路上，心中不由自主的会估算一下时间，毕竟7月也已经过去大半，不由的对自己目前的进展产生了担忧。于是乎，想在今天好好反省一下。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这几日每天都在看一些有关向量场制导方面的文章，可是总是觉得看得不是特别深入，由此感到十分的困惑——似乎走进了一个死胡同。今天走在路上，心中不由自主的会估算一下时间，毕竟7月也已经过去大半，不由的对自己目前的进展产生了担忧。于是乎，想在今天好好反省一下。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[精工：专业知识复习（9）]]></title>
         <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-9/</id>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>今天正式开始复习。万事开头难，总得讲究一些章法。这些专业知识不比数学，不是记住几个公式，运用什么定理就能掌握，往往涉及到实际的应用背后的概念，才是最为核心的东西。经过上一章的整理，主要复习的内容可以分为三个方面的内容：控制理论、飞行器动力学与控制设计和半实物仿真，这三个部分不区分开，而准备作为一个整体逐步进行复习。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>今天正式开始复习。万事开头难，总得讲究一些章法。这些专业知识不比数学，不是记住几个公式，运用什么定理就能掌握，往往涉及到实际的应用背后的概念，才是最为核心的东西。经过上一章的整理，主要复习的内容可以分为三个方面的内容：控制理论、飞行器动力学与控制设计和半实物仿真，这三个部分不区分开，而准备作为一个整体逐步进行复习。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（1）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-1/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-1/">
-        </link>
-        <updated>2020-07-08T07:00:39.000Z</updated>
-        <summary type="html"><![CDATA[<p>最近，在专心写论文的同时，也需要开始着手为找工作做准备了。为了应对即将到来的各种笔试和面试工作，需要对专业知识进行有条理的复习。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>最近，在专心写论文的同时，也需要开始着手为找工作做准备了。为了应对即将到来的各种笔试和面试工作，需要对专业知识进行有条理的复习。</p>
 ]]></content>
     </entry>
 </feed>
