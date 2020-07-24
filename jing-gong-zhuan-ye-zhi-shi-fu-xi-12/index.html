@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>精工：专业知识复习（12） | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1595554087895">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1595554087895" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              精工：专业知识复习（12）
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-23 ·
+              </time>
+              
+                <a href="https://wang-jie-bit.github.io/Aero/" class="post-tags">
+                  # 专业知识
+                </a>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>今天继续复习自动驾驶仪的设计问题。拟采用根轨迹法进行设计。</p>
+<!-- more -->
+<p>根轨迹法设计的核心思想是根据开环传函，绘制闭环特征根的轨迹，从而进行系统设计工作。首先，需要明确一个问题，在根轨迹设计中，设计的变量是根轨迹增益（控制器系数），那根轨迹增益如何定义呢？和常规的反馈控制增益之间有什么关系？这些问题在设计之初需要明确。</p>
+<p>假设目标对象的传递函数可以表示为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mo>(</mo><mi>s</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>a</mi><mo>(</mo><mi>s</mi><mo>)</mo></mrow><mrow><mi>b</mi><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">G(s)=\dfrac{a(s)}{b(s)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">G</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，考虑一反馈控制系统如下：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595508914788.jpg" alt="" loading="lazy"><br>
+闭环特征方程可以表示为：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>+</mo><mi>k</mi><mi>G</mi><mo>(</mo><mi>s</mi><mo>)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1+kG(s)=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">G</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span><br>
+也就是说，这种形式可以等效为：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595509126621.jpg" alt="" loading="lazy"><br>
+它们的特征方程是一样的，也就是说对于一个单参数的反馈控制系统，可以等效为将参数放在前向回路的系统。而后者就是在matlab中使用根轨迹设计的常见形式。这里的k就是根轨迹增益，在这种情况下，设计的根轨迹增益就是反馈控制增益。</p>
+<p>在明确这个问题之后，就可以着手准备设计工作了。需要注意的是根轨迹设计本质上是单参数设计，对于像自动驾驶仪这种多回路的控制系统设计问题，需要一个回路一个回路分开设计。看起来可能有点麻烦，但是也有其优势：在这种设计方法中，可以考虑舵机动力学，复杂一点的也行，不需要进行公式推导，使用matlab绘制出根轨迹，就可以确定出设计参数。在之前的工作中，采用这种设计方法，可以直接将舵机动力学考虑进来，设计起来非常方便。其实，当时就应该花些功夫写出来，不像现在还是的从头开始想，不过好在还有些印象🙃</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-shu-ju-de-he-dui/">
+              <h3 class="post-title">
+                定点控制问题：数据的核对
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

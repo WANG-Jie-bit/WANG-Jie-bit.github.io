@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>定点控制问题：模型的准备工作 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1595554087895">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1595554087895" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              定点控制问题：模型的准备工作
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-21 ·
+              </time>
+              
+                <a href="https://wang-jie-bit.github.io/1l39cq6FU/" class="post-tags">
+                  # 科研论文
+                </a>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>模型是研究问题的基础。定点控制问题需要用到飞艇水平运动模型，今天主要整理并简单测试一下模型，为之后的研究打好基础。</p>
+<!-- more -->
+<p>在之前研究工作的基础上，整理出合适的模型，并对模型的正确性进行验证。<br>
+基本布局：采用推力差动实现转弯<br>
+飞行高度：20 km</p>
+<p>基本问题验证工作：<br>
+（1）侧滑与转弯方向<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595338248170.jpg" alt="" loading="lazy"><br>
+可以看出，侧滑角为负值，按顺时针方向转弯，符合受力情况。<br>
+同时，注意到侧滑角非常小，可能是由于高空大气密度的原因，这个问题还需要进一步分析。</p>
+<p>（2）风场的影响<br>
+考虑5<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">m/s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span></span></span></span>西风作用下，飞行轨迹的影响：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595338468493.jpg" alt="" loading="lazy"><br>
+可以发现，在风场的影响下，飞行轨迹发生了偏移，符合预期猜想。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-111/">
+              <h3 class="post-title">
+                精工：专业知识复习（10）
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

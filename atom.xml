@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-19T10:49:13.335Z</updated>
+    <updated>2020-07-24T01:28:11.789Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,83 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[霍曼转移：航天器的变轨问题]]></title>
+        <id>https://wang-jie-bit.github.io/huo-man-zhuan-yi-hang-tian-qi-de-bian-gui-wen-ti/</id>
+        <link href="https://wang-jie-bit.github.io/huo-man-zhuan-yi-hang-tian-qi-de-bian-gui-wen-ti/">
+        </link>
+        <updated>2020-07-24T00:10:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>昨天，中国火星探测器“天问”终于上天，据说需要历经7个月的时间才能到达火星。探测器从地面发射升空到达火星究竟是一个怎样的过程？让我突然想起来之前课上学习过的一个内容——霍曼转移。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>昨天，中国火星探测器“天问”终于上天，据说需要历经7个月的时间才能到达火星。探测器从地面发射升空到达火星究竟是一个怎样的过程？让我突然想起来之前课上学习过的一个内容——霍曼转移。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（12）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-12/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-12/">
+        </link>
+        <updated>2020-07-23T10:36:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。拟采用根轨迹法进行设计。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。拟采用根轨迹法进行设计。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题：数据的核对]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-shu-ju-de-he-dui/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-shu-ju-de-he-dui/">
+        </link>
+        <updated>2020-07-23T00:06:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>继续完善仿真模型的搭建工作，主要针对所用的数据进行核对。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>继续完善仿真模型的搭建工作，主要针对所用的数据进行核对。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（11）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-11/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-11/">
+        </link>
+        <updated>2020-07-22T12:51:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。昨天搭建了基本的纵向运动线性化模型，并根据动力学系数进行了初步的分析，今天将在其基础上进行进一步的研究。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。昨天搭建了基本的纵向运动线性化模型，并根据动力学系数进行了初步的分析，今天将在其基础上进行进一步的研究。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题：模型的准备工作]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-mo-xing-de-zhun-bei-gong-zuo/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-mo-xing-de-zhun-bei-gong-zuo/">
+        </link>
+        <updated>2020-07-21T12:40:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>模型是研究问题的基础。定点控制问题需要用到飞艇水平运动模型，今天主要整理并简单测试一下模型，为之后的研究打好基础。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>模型是研究问题的基础。定点控制问题需要用到飞艇水平运动模型，今天主要整理并简单测试一下模型，为之后的研究打好基础。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（10）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-111/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-111/">
+        </link>
+        <updated>2020-07-21T10:38:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>近阶段开始复习自动驾驶仪设计。在总结驾驶仪设计方法之前，首选需要建立数学模型——采用线性化之后的模型来描述飞行器的纵向、侧向和滚转运动。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>近阶段开始复习自动驾驶仪设计。在总结驾驶仪设计方法之前，首选需要建立数学模型——采用线性化之后的模型来描述飞行器的纵向、侧向和滚转运动。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题的初步设想]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-de-chu-bu-she-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-de-chu-bu-she-xiang/">
+        </link>
+        <updated>2020-07-20T12:41:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为种种原因，定点控制问题，也就是之前说的问题3，需要提前进入议程了。今天中午偶然萌生点想法，简单思考思考。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为种种原因，定点控制问题，也就是之前说的问题3，需要提前进入议程了。今天中午偶然萌生点想法，简单思考思考。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020年7月19日：自省]]></title>
         <id>https://wang-jie-bit.github.io/2020-nian-7-yue-19-ri-zi-sheng/</id>
@@ -41,83 +118,6 @@
         <summary type="html"><![CDATA[<p>今天开始步入控制理论的复习。针对控制理论中的稳定性判定问题进行复习。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>今天开始步入控制理论的复习。针对控制理论中的稳定性判定问题进行复习。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（7）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-7/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-7/">
-        </link>
-        <updated>2020-07-14T01:33:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始复习飞行器动态特性分析。在上一节得到的线性化模型的基础上，对飞行器动态模型进行初步的分析，总结基本的分析方法，并未进一步的控制器设计打好基础。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天开始复习飞行器动态特性分析。在上一节得到的线性化模型的基础上，对飞行器动态模型进行初步的分析，总结基本的分析方法，并未进一步的控制器设计打好基础。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（6）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-6/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-6/">
-        </link>
-        <updated>2020-07-13T00:31:42.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天进一步复习运动方程的线性化。在上一节，重点复习了对于一个复杂问题的线性化的一般方法，现在针对具体的飞行器运动方程进行线性化，主要参考《飞行力学》。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天进一步复习运动方程的线性化。在上一节，重点复习了对于一个复杂问题的线性化的一般方法，现在针对具体的飞行器运动方程进行线性化，主要参考《飞行力学》。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020年7月12日：自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-12-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-12-ri-zi-sheng/">
-        </link>
-        <updated>2020-07-12T13:07:53.000Z</updated>
-        <summary type="html"><![CDATA[<p>不知不觉中，7月已到中旬。之前提到，目前阶段主要有三个问题需要考虑。经过这一阶段的思考和尝试，今天对这三个问题进行一下总结和反思。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>不知不觉中，7月已到中旬。之前提到，目前阶段主要有三个问题需要考虑。经过这一阶段的思考和尝试，今天对这三个问题进行一下总结和反思。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（5）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-5/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-5/">
-        </link>
-        <updated>2020-07-12T00:02:48.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始复习线性化问题。对于如此复杂的非线性参数时变的动力学模型，只能够在一定程度上模拟真实飞行器的模型，但是对于控制系统设计却显得十分复杂。通过线性化处理，在线性模型的基础上进行设计，就方便的多。线性化究竟是一个怎样的过程呢？</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天开始复习线性化问题。对于如此复杂的非线性参数时变的动力学模型，只能够在一定程度上模拟真实飞行器的模型，但是对于控制系统设计却显得十分复杂。通过线性化处理，在线性模型的基础上进行设计，就方便的多。线性化究竟是一个怎样的过程呢？</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（4）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi/">
-        </link>
-        <updated>2020-07-11T09:17:02.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天主要复习飞行器在飞行过程中受到的力和力矩。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天主要复习飞行器在飞行过程中受到的力和力矩。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（3）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-3/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-3/">
-        </link>
-        <updated>2020-07-10T00:54:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始复习：动力学方程的推导</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天开始复习：动力学方程的推导</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（2）]]></title>
-        <id>https://wang-jie-bit.github.io/专业知识复习2/</id>
-        <link href="https://wang-jie-bit.github.io/专业知识复习2/">
-        </link>
-        <updated>2020-07-09T07:01:48.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天正式开始复习。万事开头难，总得讲究一些章法。这些专业知识不比数学，不是记住几个公式，运用什么定理就能掌握，往往涉及到实际的应用背后的概念，才是最为核心的东西。经过上一章的整理，主要复习的内容可以分为三个方面的内容：控制理论、飞行器动力学与控制设计和半实物仿真，这三个部分不区分开，而准备作为一个整体逐步进行复习。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天正式开始复习。万事开头难，总得讲究一些章法。这些专业知识不比数学，不是记住几个公式，运用什么定理就能掌握，往往涉及到实际的应用背后的概念，才是最为核心的东西。经过上一章的整理，主要复习的内容可以分为三个方面的内容：控制理论、飞行器动力学与控制设计和半实物仿真，这三个部分不区分开，而准备作为一个整体逐步进行复习。</p>
 ]]></content>
     </entry>
 </feed>
