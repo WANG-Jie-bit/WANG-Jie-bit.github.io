@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>定点控制问题：制导律分析 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1596196563436">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1596196563436" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              定点控制问题：制导律分析
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-29 ·
+              </time>
+              
+                <a href="https://wang-jie-bit.github.io/1l39cq6FU/" class="post-tags">
+                  # 科研论文
+                </a>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>上一节基本搭建好控制平台，可以在其上进行一部分的验证工作。今天初步对制导律进行分析，整理整理之前的思路。</p>
+<!-- more -->
+<p>先从一个简单的问题进行考虑。将整个定点区域划分为两个同心圆，如下图所示：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1596029387394.JPG" alt="" loading="lazy"><br>
+在定点区域之外，可以采用简单的瞄点法制导律，是的飞行器能够指向整个定点区域。进入定点区域之后，可以考虑采用向量法制导律，是的飞行器渐近趋近于定点区域内部的小圆，最终的飞行状态是绕着小圆飞行。</p>
+<p>目前一个不是很成熟的想法是，在上图的基础上，开辟一个制导区域，当飞行器的位置落在制导区域内并且满足航向要求，可以切换到追踪制导模式，飞行器将向着定点中心飞行。这个思路目前只是处于初步设想阶段，需要进行验证。</p>
+<p>可以先从一个简单的实例入手开始分析——实现绕小圆的飞行问题。采用向量场制导律来实现。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-15/">
+              <h3 class="post-title">
+                精工：专业知识复习（15）
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

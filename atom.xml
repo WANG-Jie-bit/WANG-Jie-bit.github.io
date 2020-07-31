@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-07-24T01:28:11.789Z</updated>
+    <updated>2020-07-31T11:56:26.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,105 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（16）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-16/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-16/">
+        </link>
+        <updated>2020-07-30T11:34:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天继续复习制导律的设计问题：比例导引的实现问题。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天继续复习制导律的设计问题：比例导引的实现问题。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题：制导律分析]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-zhi-dao-lu-fen-xi/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-zhi-dao-lu-fen-xi/">
+        </link>
+        <updated>2020-07-29T13:08:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>上一节基本搭建好控制平台，可以在其上进行一部分的验证工作。今天初步对制导律进行分析，整理整理之前的思路。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上一节基本搭建好控制平台，可以在其上进行一部分的验证工作。今天初步对制导律进行分析，整理整理之前的思路。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（15）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-15/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-15/">
+        </link>
+        <updated>2020-07-29T11:10:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天开始复习制导律相关内容。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天开始复习制导律相关内容。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题：基本控制问题验证]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-ji-ben-kong-zhi-wen-ti-yan-zheng/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-ji-ben-kong-zhi-wen-ti-yan-zheng/">
+        </link>
+        <updated>2020-07-28T13:35:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>在之前考虑的基本控制问题的基础上，通过matlab来进行验证。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在之前考虑的基本控制问题的基础上，通过matlab来进行验证。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（14）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-14/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-14/">
+        </link>
+        <updated>2020-07-28T10:09:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天开始复习BTT转弯时的协调控制策略。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天开始复习BTT转弯时的协调控制策略。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[上升问题分析：如何到达设定的任务点]]></title>
+        <id>https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-ru-he-dao-da-she-ding-de-ren-wu-dian/</id>
+        <link href="https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-ru-he-dao-da-she-ding-de-ren-wu-dian/">
+        </link>
+        <updated>2020-07-27T13:49:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（13）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-13（1）/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-13（1）/">
+        </link>
+        <updated>2020-07-27T10:26:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天采用具体的案例来继续探讨自动驾驶仪的设计。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天采用具体的案例来继续探讨自动驾驶仪的设计。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020年7月26日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-26-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-26-ri-zi-sheng/">
+        </link>
+        <updated>2020-07-26T12:03:38.000Z</updated>
+        <summary type="html"><![CDATA[<p>转眼间，7月剩不了几天了，居家学习也已经整整半年了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>转眼间，7月剩不了几天了，居家学习也已经整整半年了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[定点控制问题：基本控制问题设计]]></title>
+        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti/</id>
+        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti/">
+        </link>
+        <updated>2020-07-24T13:03:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>上一节对建立的仿真模型进行了验证，初步定下来本问题的研究中，采用控制力+控制力矩的形式来实现。在该仿真模型的基础上，考虑基本的设计问题。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上一节对建立的仿真模型进行了验证，初步定下来本问题的研究中，采用控制力+控制力矩的形式来实现。在该仿真模型的基础上，考虑基本的设计问题。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[霍曼转移：航天器的变轨问题]]></title>
         <id>https://wang-jie-bit.github.io/huo-man-zhuan-yi-hang-tian-qi-de-bian-gui-wen-ti/</id>
@@ -19,105 +118,6 @@
         <summary type="html"><![CDATA[<p>昨天，中国火星探测器“天问”终于上天，据说需要历经7个月的时间才能到达火星。探测器从地面发射升空到达火星究竟是一个怎样的过程？让我突然想起来之前课上学习过的一个内容——霍曼转移。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>昨天，中国火星探测器“天问”终于上天，据说需要历经7个月的时间才能到达火星。探测器从地面发射升空到达火星究竟是一个怎样的过程？让我突然想起来之前课上学习过的一个内容——霍曼转移。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（12）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-12/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-12/">
-        </link>
-        <updated>2020-07-23T10:36:56.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。拟采用根轨迹法进行设计。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。拟采用根轨迹法进行设计。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[定点控制问题：数据的核对]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-shu-ju-de-he-dui/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-shu-ju-de-he-dui/">
-        </link>
-        <updated>2020-07-23T00:06:59.000Z</updated>
-        <summary type="html"><![CDATA[<p>继续完善仿真模型的搭建工作，主要针对所用的数据进行核对。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>继续完善仿真模型的搭建工作，主要针对所用的数据进行核对。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（11）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-11/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-11/">
-        </link>
-        <updated>2020-07-22T12:51:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。昨天搭建了基本的纵向运动线性化模型，并根据动力学系数进行了初步的分析，今天将在其基础上进行进一步的研究。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天继续复习自动驾驶仪的设计问题。昨天搭建了基本的纵向运动线性化模型，并根据动力学系数进行了初步的分析，今天将在其基础上进行进一步的研究。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[定点控制问题：模型的准备工作]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-mo-xing-de-zhun-bei-gong-zuo/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-mo-xing-de-zhun-bei-gong-zuo/">
-        </link>
-        <updated>2020-07-21T12:40:21.000Z</updated>
-        <summary type="html"><![CDATA[<p>模型是研究问题的基础。定点控制问题需要用到飞艇水平运动模型，今天主要整理并简单测试一下模型，为之后的研究打好基础。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>模型是研究问题的基础。定点控制问题需要用到飞艇水平运动模型，今天主要整理并简单测试一下模型，为之后的研究打好基础。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（10）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-111/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-111/">
-        </link>
-        <updated>2020-07-21T10:38:05.000Z</updated>
-        <summary type="html"><![CDATA[<p>近阶段开始复习自动驾驶仪设计。在总结驾驶仪设计方法之前，首选需要建立数学模型——采用线性化之后的模型来描述飞行器的纵向、侧向和滚转运动。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>近阶段开始复习自动驾驶仪设计。在总结驾驶仪设计方法之前，首选需要建立数学模型——采用线性化之后的模型来描述飞行器的纵向、侧向和滚转运动。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[定点控制问题的初步设想]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-de-chu-bu-she-xiang/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-de-chu-bu-she-xiang/">
-        </link>
-        <updated>2020-07-20T12:41:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>因为种种原因，定点控制问题，也就是之前说的问题3，需要提前进入议程了。今天中午偶然萌生点想法，简单思考思考。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>因为种种原因，定点控制问题，也就是之前说的问题3，需要提前进入议程了。今天中午偶然萌生点想法，简单思考思考。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020年7月19日：自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-19-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-19-ri-zi-sheng/">
-        </link>
-        <updated>2020-07-19T09:59:11.000Z</updated>
-        <summary type="html"><![CDATA[<p>这几日每天都在看一些有关向量场制导方面的文章，可是总是觉得看得不是特别深入，由此感到十分的困惑——似乎走进了一个死胡同。今天走在路上，心中不由自主的会估算一下时间，毕竟7月也已经过去大半，不由的对自己目前的进展产生了担忧。于是乎，想在今天好好反省一下。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这几日每天都在看一些有关向量场制导方面的文章，可是总是觉得看得不是特别深入，由此感到十分的困惑——似乎走进了一个死胡同。今天走在路上，心中不由自主的会估算一下时间，毕竟7月也已经过去大半，不由的对自己目前的进展产生了担忧。于是乎，想在今天好好反省一下。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（9）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-9/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-9/">
-        </link>
-        <updated>2020-07-16T03:05:48.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始复习Nyquist稳定性判定方法。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天开始复习Nyquist稳定性判定方法。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（8）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-8/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-8/">
-        </link>
-        <updated>2020-07-15T01:08:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始步入控制理论的复习。针对控制理论中的稳定性判定问题进行复习。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天开始步入控制理论的复习。针对控制理论中的稳定性判定问题进行复习。</p>
 ]]></content>
     </entry>
 </feed>

@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>精工：专业知识复习（13） | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1596196563436">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1596196563436" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              精工：专业知识复习（13）
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-07-27 ·
+              </time>
+              
+                <a href="https://wang-jie-bit.github.io/Aero/" class="post-tags">
+                  # 专业知识
+                </a>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>今天采用具体的案例来继续探讨自动驾驶仪的设计。</p>
+<!-- more -->
+<p>重点讨论倾角自动驾驶仪的设计问题。控制系统结构框图如下：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595760061937.JPG" alt="" loading="lazy"><br>
+设计问题归结为设计<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>ω</mi></msub></mrow><annotation encoding="application/x-tex">K_{\omega}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>θ</mi></msub></mrow><annotation encoding="application/x-tex">K_{\theta}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>这两个参数。</p>
+<p>根据上一节讨论的结果，分别进行设计。<br>
+（1）内回路设计<br>
+在内回路设计问题中，目的是确定<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>ω</mi></msub></mrow><annotation encoding="application/x-tex">K_{\omega}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，这里考虑的系统模型为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi>G</mi><mi>δ</mi><msub><mi>ω</mi><mi>z</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">G_{\delta}^{\omega _z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0475999999999999em;vertical-align:-0.3013079999999999em;"></span><span class="mord"><span class="mord mathdefault">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.746292em;"><span style="top:-2.3986920000000005em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03785em;">δ</span></span></span></span><span style="top:-3.1449000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16454285714285719em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013079999999999em;"><span></span></span></span></span></span></span></span></span></span><br>
+内回路的设计主要是为了增大阻尼，在这里初步设计为0.8，如下图所示：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595846238877.JPG" alt="" loading="lazy"><br>
+记录下此时的控制增益<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>ω</mi></msub><mo>=</mo><mn>0.33029</mn></mrow><annotation encoding="application/x-tex">K_{\omega}=0.33029</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">3</span><span class="mord">3</span><span class="mord">0</span><span class="mord">2</span><span class="mord">9</span></span></span></span></p>
+<p>（2）外回路设计<br>
+在内回路设计的基础上，增加内环，系统修改为：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595846475249.JPG" alt="" loading="lazy"><br>
+外回路的设计主要是为了实现角度控制，在采用根轨迹法进行设计时，主要关注的时系统的响应特性，如下图所示：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595847067474.JPG" alt="" loading="lazy"><br>
+记录下此时的控制增益<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>θ</mi></msub><mo>=</mo><mn>0.91322</mn></mrow><annotation encoding="application/x-tex">K_{\theta}=0.91322</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">9</span><span class="mord">1</span><span class="mord">3</span><span class="mord">2</span><span class="mord">2</span></span></span></span></p>
+<p>至此，两回路参数基本设计完毕。似乎有点简单，但这个问题本来也不难。<br>
+下面给出在Simulink中搭建的系统进行参数验证：<br>
+系统框图为：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595847372628.JPG" alt="" loading="lazy"><br>
+系统响应特性为：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595847601321.JPG" alt="" loading="lazy"></p>
+<p><strong>下面简单考虑舵机特性的设计</strong><br>
+在上述设计的基础上，考虑舵机特性，设计方法类似，下面结合实例进行设计与分析。<br>
+考虑舵机特性，舵机的频率基本上是弹体频率的3~5倍。在实例中，弹体频率为3.47<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">/</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">rad/s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">d</span><span class="mord">/</span><span class="mord mathdefault">s</span></span></span></span>，所以舵机频率为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>15</mn><mi>r</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">/</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">15 rad/s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">d</span><span class="mord">/</span><span class="mord mathdefault">s</span></span></span></span>，阻尼选为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0.7</mn></mrow><annotation encoding="application/x-tex">0.7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span></span></span></span>，因此舵机传函可以表示为：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>G</mi><mi>c</mi></msub><mo>(</mo><mi>s</mi><mo>)</mo><mo>=</mo><mfrac><msup><mi>ω</mi><mn>2</mn></msup><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>ζ</mi><mi>ω</mi><mi>s</mi><mo>+</mo><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">G_c(s)=\dfrac{\omega ^2}{s^2+2\zeta \omega s + \omega ^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.371548em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.07378em;">ζ</span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>（1）内回路设计<br>
+这时零极点的分布更为复杂，需要平衡选取合适的阻尼。这里也暂时没有特别明确的处理方法，先选取在0.7附近，如下图所示：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595849156964.JPG" alt="" loading="lazy"><br>
+此时，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>ω</mi></msub><mo>=</mo><mn>0.21638</mn></mrow><annotation encoding="application/x-tex">K_{\omega}=0.21638</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">1</span><span class="mord">6</span><span class="mord">3</span><span class="mord">8</span></span></span></span></p>
+<p>（2）外回路设计<br>
+外回路设计结果如下图所示：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595849349328.JPG" alt="" loading="lazy"><br>
+此时，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>θ</mi></msub><mo>=</mo><mn>0.80537</mn></mrow><annotation encoding="application/x-tex">K_{\theta}=0.80537</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">8</span><span class="mord">0</span><span class="mord">5</span><span class="mord">3</span><span class="mord">7</span></span></span></span></p>
+<p>系统响应特性为：<br>
+<img src="https://wang-jie-bit.github.io/post-images/1595849477004.JPG" alt="" loading="lazy"></p>
+<p>可以看出，考虑舵机回路时，采用根轨迹设计方法进行设计，方法是与不考虑舵机是一致的，哪怕是更为复杂的问题也是相同的处理方法。这就是采用根轨迹设计法的优势，也是区别与传统的频率域设计的优势。这里主要给出倾角自动驾驶仪的设计过程，其实姿态角的设计思路也是一样的。但是需要注意的是，姿态角的设计可能需要反复调节内回路设计参数，因为外回路参数设计之后对系统的阻尼有较大影响。主要原因可能在于倾角是速度参数，姿态角是弹体参数，相比较而言，倾角属于长周期参数，对其进行设计时，会对内回路的阻尼影响较小。这也是这里主要考虑采用倾角回路进行设计的原因。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/2020-nian-7-yue-26-ri-zi-sheng/">
+              <h3 class="post-title">
+                2020年7月26日：自省
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
