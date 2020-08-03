@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-08-01T14:38:14.791Z</updated>
+    <updated>2020-08-03T14:00:45.430Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[精工：专业知识复习（17）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-17/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-17/">
+        </link>
+        <updated>2020-08-03T13:13:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天开始简单分析分析现代控制理论中的内容。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天开始简单分析分析现代控制理论中的内容。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[面试准备（1）：如何说清楚自己的研究内容]]></title>
+        <id>https://wang-jie-bit.github.io/mian-shi-zhun-bei-1ru-he-shuo-qing-chu-zi-ji-de-yan-jiu-nei-rong/</id>
+        <link href="https://wang-jie-bit.github.io/mian-shi-zhun-bei-1ru-he-shuo-qing-chu-zi-ji-de-yan-jiu-nei-rong/">
+        </link>
+        <updated>2020-08-03T10:17:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>在面试过程中，很可能遇到的一个问题就是面试官要求简单说一下自己的研究工作是什么。需要精简精简语言，说的太细致对方可能不想听；说的太粗略，对方可能会觉得你没做点啥。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在面试过程中，很可能遇到的一个问题就是面试官要求简单说一下自己的研究工作是什么。需要精简精简语言，说的太细致对方可能不想听；说的太粗略，对方可能会觉得你没做点啥。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020年8月3日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-8-yue-3-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-8-yue-3-ri-zi-sheng/">
+        </link>
+        <updated>2020-08-03T00:53:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>很快已经到达了8月份，前一阶段主要是对之前已经写出来的论文进行进一步的修改和投稿。今天开始，又要步入新的轨道了。可以预料的到，之后的某一阶段时间里，可能真的会鸭梨山大。找工作和写论文需要同时开弓，也是难上加难。往好的方向想，至少我还有时间，有时间就意味着有变数，困难是有的，但是我也不应该被吓到。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很快已经到达了8月份，前一阶段主要是对之前已经写出来的论文进行进一步的修改和投稿。今天开始，又要步入新的轨道了。可以预料的到，之后的某一阶段时间里，可能真的会鸭梨山大。找工作和写论文需要同时开弓，也是难上加难。往好的方向想，至少我还有时间，有时间就意味着有变数，困难是有的，但是我也不应该被吓到。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[上升问题分析：侧向的控制问题分析]]></title>
         <id>https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-ce-xiang-de-kong-zhi-wen-ti-fen-xi/</id>
@@ -85,39 +118,6 @@
         <summary type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（13）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-13（1）/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-13（1）/">
-        </link>
-        <updated>2020-07-27T10:26:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天采用具体的案例来继续探讨自动驾驶仪的设计。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天采用具体的案例来继续探讨自动驾驶仪的设计。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020年7月26日：自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-7-yue-26-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-7-yue-26-ri-zi-sheng/">
-        </link>
-        <updated>2020-07-26T12:03:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>转眼间，7月剩不了几天了，居家学习也已经整整半年了。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>转眼间，7月剩不了几天了，居家学习也已经整整半年了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[定点控制问题：基本控制问题设计]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti/">
-        </link>
-        <updated>2020-07-24T13:03:59.000Z</updated>
-        <summary type="html"><![CDATA[<p>上一节对建立的仿真模型进行了验证，初步定下来本问题的研究中，采用控制力+控制力矩的形式来实现。在该仿真模型的基础上，考虑基本的设计问题。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>上一节对建立的仿真模型进行了验证，初步定下来本问题的研究中，采用控制力+控制力矩的形式来实现。在该仿真模型的基础上，考虑基本的设计问题。</p>
 ]]></content>
     </entry>
 </feed>
