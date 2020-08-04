@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-08-03T14:00:45.430Z</updated>
+    <updated>2020-08-04T10:40:36.975Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[Python技能学习：词云]]></title>
+        <id>https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun/</id>
+        <link href="https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun/">
+        </link>
+        <updated>2020-08-04T10:01:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>采用python来制作词云是非常方便的。这里主要参考嵩天老师的教学视频《Python语言程序设计》。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>采用python来制作词云是非常方便的。这里主要参考嵩天老师的教学视频《Python语言程序设计》。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[精工：专业知识复习（17）]]></title>
         <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-17/</id>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>今天开始复习BTT转弯时的协调控制策略。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>今天开始复习BTT转弯时的协调控制策略。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[上升问题分析：如何到达设定的任务点]]></title>
-        <id>https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-ru-he-dao-da-she-ding-de-ren-wu-dian/</id>
-        <link href="https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-ru-he-dao-da-she-ding-de-ren-wu-dian/">
-        </link>
-        <updated>2020-07-27T13:49:25.000Z</updated>
-        <summary type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在全仿真模型的基础上，简单分析如何到达设定的任务点的问题。</p>
 ]]></content>
     </entry>
 </feed>
