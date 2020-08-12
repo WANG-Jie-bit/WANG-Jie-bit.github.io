@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>上升段问题分析：基本设计工作的仿真验证 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1597198768017">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1597198768017" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              上升段问题分析：基本设计工作的仿真验证
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-08-11 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>在之前编写的程序的基础上，考虑基本控制回路和制导回路的实现，通过仿真完成基本的验证工作。</p>
+<!-- more -->
+<p>之前的工作中，设计了基本的制导-控制回路，在之前搭建的模型的基础上，进行仿真验证。主要可以分为两个层面：控制层面的验证；制导-控制全仿真验证。在控制层面的验证工作中，可以指定控制指令（速度指令和航向指令），验证控制回路能够实现指令跟踪。之后，编写制导律模块，用以生成指令，然后再通过控制回路实现跟踪。</p>
+<p>在初期设计中，可以认为风场和模型参数均为已知量，在后续的工作中，可以考虑采用观测器和自适应设计方法，对风场和模型不确定性进行处理。控制回路的设计中，采用基本的反步法进行设计。在程序实现方面，需要考虑设计中的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>u</mi></msub></mrow><annotation encoding="application/x-tex">f_u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">f_r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>g</mi><mi>u</mi></msub></mrow><annotation encoding="application/x-tex">g_u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>g</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">g_r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的具体形式，然后再考虑设计。</p>
+<p>1、控制回路的验证工作<br>
+设定速度指令为10m/s，航向指令为5°，在飞艇上升至3000 m时施加控制。仿真结果如下：<br>
+（1）轨迹曲线<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597117080022.jpg" alt="" loading="lazy"></p>
+<p>（2）速度曲线<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597131112736.jpg" alt="" loading="lazy"></p>
+<p>（3）航向曲线<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597131207996.jpg" alt="" loading="lazy"></p>
+<p>从以上结果可以看出，基本控制回路设计效果能够满足预期。速度和航向可以准确跟踪设定的指令。</p>
+<p>2、制导-控制回路的验证工作<br>
+航向指令和速度指令由制导律给出，在程序中添加制导模块。<br>
+在程序中添加航向误差修正函数anglefix，保证误差限制在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mo>−</mo><mi>π</mi><mo separator="true">,</mo><mi>π</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(-\pi,\pi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mclose">)</span></span></span></span>范围之内。<br>
+程序中潜在的问题是，飞艇上升至压力高度时，氦气体积比为1，之后会出现发散的现象。这个问题主要是由于氦气充满艇囊之后，与空气相关的参数均为零。</p>
+<p>制导律的设计还需要继续验证，目前的结果并不能说明问题。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/shang-sheng-duan-wen-ti-fen-xi-zhi-dao-lu-de-chu-bu-she-ji/">
+              <h3 class="post-title">
+                上升段问题分析：制导律的初步设计
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
