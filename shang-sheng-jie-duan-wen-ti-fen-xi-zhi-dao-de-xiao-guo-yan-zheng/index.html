@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>上升阶段问题分析：制导的效果验证 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1600004230331">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1600004230331" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              上升阶段问题分析：制导的效果验证
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-08-17 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>上一节验证了基本控制回路的效果，所设计的控制器能够满足要求，实现对制导指令的跟踪。</p>
+<!-- more -->
+<p>这里先不考虑速度控制的问题，将速度控制为常值。这样，飞艇的上升可以考虑为三个阶段：<br>
+1）无动力上升段：飞艇在净浮力的作用下无动力上升，速度和航向均不控<br>
+2）航向调整阶段：随着飞艇逐渐开始转平，当俯仰角小于设定值时，开始控制航向和速度。速度控制为常值。航向采用追踪法。<br>
+3）速度调整段：当航向逐渐收敛，可以主要考虑速度的调整，保证飞艇到达任务点时速度大小等于风速。</p>
+<p>基本问题是实现分阶段设计，保证飞艇能够基本实现到达任务点。在本节，首先考虑速度控制为常值的情况，实现基本的制导效果验证。</p>
+<p>速度启控时间：3000 s<br>
+速度大小：5 m/s</p>
+<p>仿真结果如下：</p>
+<p>（1）平面轨迹<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597669128979.jpg" alt="" loading="lazy"><br>
+（2）三维轨迹<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597669646870.jpg" alt="" loading="lazy"><br>
+（3）速度<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597669716882.jpg" alt="" loading="lazy"><br>
+（4）航向<br>
+<img src="https://wang-jie-bit.github.io/post-images/1597669829316.jpg" alt="" loading="lazy"></p>
+<p>以上结果可知，基本符合之前的设想。所设计的制导控制系统能够保证飞艇上升至指定的任务点。由于考虑的是速度常值控制，飞艇到达任务点时速度并不等于风速。</p>
+<p>基于此，可以进一步研究的工作是：1）假设风场未知，通过估计风场的形式来设计速度控制回路 2）在控制器设计中考虑模型不确定性（质心、转动惯量和总质量）</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-jin-yi-bu-yan-jiu-zhi-dao-lu-wen-ti/">
+              <h3 class="post-title">
+                定点控制问题：进一步研究制导律问题
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

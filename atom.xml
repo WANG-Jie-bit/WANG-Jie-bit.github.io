@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-08-12T02:20:40.151Z</updated>
+    <updated>2020-09-13T13:37:25.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -11,113 +11,105 @@
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
     <entry>
-        <title type="html"><![CDATA[上升段问题分析：基本设计工作的仿真验证]]></title>
-        <id>https://wang-jie-bit.github.io/shang-sheng-duan-wen-ti-fen-xi-ji-ben-she-ji-gong-zuo-de-fang-zhen-yan-zheng/</id>
-        <link href="https://wang-jie-bit.github.io/shang-sheng-duan-wen-ti-fen-xi-ji-ben-she-ji-gong-zuo-de-fang-zhen-yan-zheng/">
+        <title type="html"><![CDATA[2020年9月13日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-9-yue-13-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-9-yue-13-ri-zi-sheng/">
         </link>
-        <updated>2020-08-11T01:00:05.000Z</updated>
-        <summary type="html"><![CDATA[<p>在之前编写的程序的基础上，考虑基本控制回路和制导回路的实现，通过仿真完成基本的验证工作。</p>
+        <updated>2020-09-13T13:04:34.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[教师节随想]]></title>
+        <id>https://wang-jie-bit.github.io/jiao-shi-jie-sui-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/jiao-shi-jie-sui-xiang/">
+        </link>
+        <updated>2020-09-10T01:31:13.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[面试准备（7）：裕度问题的复习]]></title>
+        <id>https://wang-jie-bit.github.io/mian-shi-zhun-bei-7yu-du-wen-ti-de-fu-xi/</id>
+        <link href="https://wang-jie-bit.github.io/mian-shi-zhun-bei-7yu-du-wen-ti-de-fu-xi/">
+        </link>
+        <updated>2020-09-08T12:08:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>面试中可能会遇到裕度问题，什么是幅值裕度，什么是相位裕度，怎么求取这些裕度，如何选择这些裕度？</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>在之前编写的程序的基础上，考虑基本控制回路和制导回路的实现，通过仿真完成基本的验证工作。</p>
+        <content type="html"><![CDATA[<p>面试中可能会遇到裕度问题，什么是幅值裕度，什么是相位裕度，怎么求取这些裕度，如何选择这些裕度？</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[上升段问题分析：制导律的初步设计]]></title>
-        <id>https://wang-jie-bit.github.io/shang-sheng-duan-wen-ti-fen-xi-zhi-dao-lu-de-chu-bu-she-ji/</id>
-        <link href="https://wang-jie-bit.github.io/shang-sheng-duan-wen-ti-fen-xi-zhi-dao-lu-de-chu-bu-she-ji/">
+        <title type="html"><![CDATA[上升阶段问题分析：目标点的选取研究]]></title>
+        <id>https://wang-jie-bit.github.io/shang-sheng-jie-duan-wen-ti-fen-xi-mu-biao-dian-de-xuan-qu-yan-jiu/</id>
+        <link href="https://wang-jie-bit.github.io/shang-sheng-jie-duan-wen-ti-fen-xi-mu-biao-dian-de-xuan-qu-yan-jiu/">
         </link>
-        <updated>2020-08-10T23:56:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>上一节基本完成了控制回路的设计，今天主要考虑制导律的初步设计问题，为控制回路提供指令。</p>
+        <updated>2020-09-07T23:44:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>选择合适的目标点，可以避免航向指令突变的问题。打算从数学的角度对这个问题进行深入的思考和研究，是否可以从优化的角度选择合适的目标点呢？</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>上一节基本完成了控制回路的设计，今天主要考虑制导律的初步设计问题，为控制回路提供指令。</p>
+        <content type="html"><![CDATA[<p>选择合适的目标点，可以避免航向指令突变的问题。打算从数学的角度对这个问题进行深入的思考和研究，是否可以从优化的角度选择合适的目标点呢？</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020年8月9日：自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-8-yue-9-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-8-yue-9-ri-zi-sheng/">
+        <title type="html"><![CDATA[面试准备（6）：常见问题思考]]></title>
+        <id>https://wang-jie-bit.github.io/mian-shi-zhun-bei-6chang-jian-wen-ti-si-kao/</id>
+        <link href="https://wang-jie-bit.github.io/mian-shi-zhun-bei-6chang-jian-wen-ti-si-kao/">
         </link>
-        <updated>2020-08-09T13:27:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>归去来兮~</p>
+        <updated>2020-09-07T10:22:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>在面试中遇到的一些常见的问题，汇总起来，为之后的面试提供参考。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>归去来兮~</p>
+        <content type="html"><![CDATA[<p>在面试中遇到的一些常见的问题，汇总起来，为之后的面试提供参考。</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[定点控制问题：制导律的实现]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-zhi-dao-lu-de-shi-xian/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-zhi-dao-lu-de-shi-xian/">
+        <title type="html"><![CDATA[上升阶段问题分析：速度控制基本设想]]></title>
+        <id>https://wang-jie-bit.github.io/shang-sheng-jie-duan-wen-ti-fen-xi-su-du-kong-zhi-ji-ben-she-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/shang-sheng-jie-duan-wen-ti-fen-xi-su-du-kong-zhi-ji-ben-she-xiang/">
         </link>
-        <updated>2020-08-05T13:17:56.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天继续研究定点控制问题，考虑一个简单的实现方案：盘旋轨迹跟踪问题</p>
+        <updated>2020-09-07T00:02:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>在上一节的分析中，在上升阶段，风场方向的变化其实很小，在某一高度附近，其实是可以默认风场是常值。这样的假设条件下，能否采用一种借助风场的导引律，使得飞艇能够到达任务点，并满足速度约束？</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>今天继续研究定点控制问题，考虑一个简单的实现方案：盘旋轨迹跟踪问题</p>
+        <content type="html"><![CDATA[<p>在上一节的分析中，在上升阶段，风场方向的变化其实很小，在某一高度附近，其实是可以默认风场是常值。这样的假设条件下，能否采用一种借助风场的导引律，使得飞艇能够到达任务点，并满足速度约束？</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Python技能学习：词云图片的更改]]></title>
-        <id>https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun-tu-pian-de-geng-gai/</id>
-        <link href="https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun-tu-pian-de-geng-gai/">
+        <title type="html"><![CDATA[问题研究：椭球模型投影面积的计算]]></title>
+        <id>https://wang-jie-bit.github.io/wen-ti-yan-jiu-tuo-qiu-mo-xing-tou-ying-mian-ji-de-ji-suan/</id>
+        <link href="https://wang-jie-bit.github.io/wen-ti-yan-jiu-tuo-qiu-mo-xing-tou-ying-mian-ji-de-ji-suan/">
         </link>
-        <updated>2020-08-05T12:24:02.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天主要考虑如何更改词云图片。</p>
+        <updated>2020-09-03T01:24:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>对于一个椭球模型，当光线从不同方向进行照射时，所得到的投影面积也是不同的。本文针对不同光线方向下投影面积进行讨论和计算。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>今天主要考虑如何更改词云图片。</p>
+        <content type="html"><![CDATA[<p>对于一个椭球模型，当光线从不同方向进行照射时，所得到的投影面积也是不同的。本文针对不同光线方向下投影面积进行讨论和计算。</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Python技能学习：词云]]></title>
-        <id>https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun/</id>
-        <link href="https://wang-jie-bit.github.io/python-ji-neng-xue-xi-ci-yun/">
+        <title type="html"><![CDATA[驻留问题的新设想]]></title>
+        <id>https://wang-jie-bit.github.io/zhu-liu-wen-ti-de-xin-she-xiang/</id>
+        <link href="https://wang-jie-bit.github.io/zhu-liu-wen-ti-de-xin-she-xiang/">
         </link>
-        <updated>2020-08-04T10:01:16.000Z</updated>
-        <summary type="html"><![CDATA[<p>采用python来制作词云是非常方便的。这里主要参考嵩天老师的教学视频《Python语言程序设计》。</p>
+        <updated>2020-09-02T00:28:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>结合相关论文中的长航时飞行轨迹优化方案，简单探讨飞艇长航时轨迹优化问题。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>采用python来制作词云是非常方便的。这里主要参考嵩天老师的教学视频《Python语言程序设计》。</p>
+        <content type="html"><![CDATA[<p>结合相关论文中的长航时飞行轨迹优化方案，简单探讨飞艇长航时轨迹优化问题。</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（17）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-17/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-17/">
+        <title type="html"><![CDATA[精工：专业知识复习（18）]]></title>
+        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-18/</id>
+        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-18/">
         </link>
-        <updated>2020-08-03T13:13:46.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天开始简单分析分析现代控制理论中的内容。</p>
+        <updated>2020-09-01T10:33:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天继续复习相关的专业知识：龙格-库塔数值积分算法的实现。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>今天开始简单分析分析现代控制理论中的内容。</p>
+        <content type="html"><![CDATA[<p>今天继续复习相关的专业知识：龙格-库塔数值积分算法的实现。</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020年8月3日：自省]]></title>
-        <id>https://wang-jie-bit.github.io/2020-nian-8-yue-3-ri-zi-sheng/</id>
-        <link href="https://wang-jie-bit.github.io/2020-nian-8-yue-3-ri-zi-sheng/">
+        <title type="html"><![CDATA[2020年8月30日：自省]]></title>
+        <id>https://wang-jie-bit.github.io/2020-nian-8-yue-30-ri-zi-sheng/</id>
+        <link href="https://wang-jie-bit.github.io/2020-nian-8-yue-30-ri-zi-sheng/">
         </link>
-        <updated>2020-08-03T00:53:52.000Z</updated>
-        <summary type="html"><![CDATA[<p>很快已经到达了8月份，前一阶段主要是对之前已经写出来的论文进行进一步的修改和投稿。今天开始，又要步入新的轨道了。可以预料的到，之后的某一阶段时间里，可能真的会鸭梨山大。找工作和写论文需要同时开弓，也是难上加难。往好的方向想，至少我还有时间，有时间就意味着有变数，困难是有的，但是我也不应该被吓到。</p>
+        <updated>2020-08-30T11:31:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>不知不觉已经回到学校两周多的时间了，诚如我之前预测的，回到学校之后，学习还是比在家里要规律些。唯一的缺点就是时不时得去实验室里干点杂活。呼哧~，有时候我在想，从研究生入学到现在都已经4年了，也着实干了不少活了，怎么还有？让我想起来，曾经的一位师兄说过一句名言：实验室的活是干不完的。仔细一想，就是这么回事儿！</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>很快已经到达了8月份，前一阶段主要是对之前已经写出来的论文进行进一步的修改和投稿。今天开始，又要步入新的轨道了。可以预料的到，之后的某一阶段时间里，可能真的会鸭梨山大。找工作和写论文需要同时开弓，也是难上加难。往好的方向想，至少我还有时间，有时间就意味着有变数，困难是有的，但是我也不应该被吓到。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[上升问题分析：控制回路的初步设计]]></title>
-        <id>https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-kong-zhi-hui-lu-de-chu-bu-she-ji/</id>
-        <link href="https://wang-jie-bit.github.io/shang-sheng-wen-ti-fen-xi-kong-zhi-hui-lu-de-chu-bu-she-ji/">
-        </link>
-        <updated>2020-08-02T12:40:17.000Z</updated>
-        <summary type="html"><![CDATA[<p>考虑采用一种基本的方法来设计控制回路。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>考虑采用一种基本的方法来设计控制回路。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[精工：专业知识复习（16）]]></title>
-        <id>https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-16/</id>
-        <link href="https://wang-jie-bit.github.io/jing-gong-zhuan-ye-zhi-shi-fu-xi-16/">
-        </link>
-        <updated>2020-07-30T11:34:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天继续复习制导律的设计问题：比例导引的实现问题。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天继续复习制导律的设计问题：比例导引的实现问题。</p>
+        <content type="html"><![CDATA[<p>不知不觉已经回到学校两周多的时间了，诚如我之前预测的，回到学校之后，学习还是比在家里要规律些。唯一的缺点就是时不时得去实验室里干点杂活。呼哧~，有时候我在想，从研究生入学到现在都已经4年了，也着实干了不少活了，怎么还有？让我想起来，曾经的一位师兄说过一句名言：实验室的活是干不完的。仔细一想，就是这么回事儿！</p>
 ]]></content>
     </entry>
 </feed>

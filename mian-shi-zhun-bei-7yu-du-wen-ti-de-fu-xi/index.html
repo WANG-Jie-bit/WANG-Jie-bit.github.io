@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>面试准备（7）：裕度问题的复习 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1600004230331">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1600004230331" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              面试准备（7）：裕度问题的复习
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-09-08 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>面试中可能会遇到裕度问题，什么是幅值裕度，什么是相位裕度，怎么求取这些裕度，如何选择这些裕度？</p>
+<!-- more -->
+<p>系统的稳定裕度，本质上的判定是根据开环频率特性图与复数平面上的-1+j0点的相对距离进行表征。如果距离较近，当系统的某些参数发生变化时，原本不包围复数平面-1+j0点的曲线就可能变为包围该点，原来稳定的系统就有可能变得不稳定。<br>
+幅值裕度和相位裕度是工程上对于稳定裕度的描述。<br>
+幅值裕度比较容易理解，指的是设计的开环增益还能够增大多少倍，系统就不稳定了（或者说是达到了临界稳定状态）；<br>
+相位裕度的理解可能就需要结合一下实际系统的滞后效应加以理解。任何物理系统都有一个滞后效应，当系统滞后太多，就会出现不稳定的情况。相位裕度就是描述系统还能再滞后多少度就不稳定（或者说达到了临界稳定状态）；</p>
+<p>总结：<br>
+其实幅值裕度和相位裕度都是为了描述清楚系统不确定性而引入的概念。幅值裕度考虑的是系统参数不确定性，因而在设计控制系统增益时，需要考虑参数设计的不能太大；相位裕度考虑的是系统环节的不确定而引入的滞后不确定，需要考虑引入超前校正环节进行一定程度的补偿。</p>
+<p>此外，稳定裕度除了指明系统在不确定性情况下的性质之外，还能够表示系统的动态特性。在《Feedback control of dynamic systems》一书指出，对于一个二阶系统，阻尼比和相位裕度有如下关系：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ζ</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mi>M</mi></mrow><mn>100</mn></mfrac></mrow><annotation encoding="application/x-tex">\zeta=\dfrac{PM}{100}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.07378em;">ζ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><br>
+因此，稳定裕度越大，也往往意味着该系统动态响应缓慢。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/shang-sheng-jie-duan-wen-ti-fen-xi-mu-biao-dian-de-xuan-qu-yan-jiu/">
+              <h3 class="post-title">
+                上升阶段问题分析：目标点的选取研究
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
