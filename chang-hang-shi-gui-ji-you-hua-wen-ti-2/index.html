@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>长航时轨迹优化问题研究（1）：研究成果总结-2 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1607295344039">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1607295344039" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              长航时轨迹优化问题研究（1）：研究成果总结-2
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-12-02 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>在上一节回顾了耦合建模的相关内容。今天主要再次复习序列凸优化相关内容，重点包括：1）哪些地方需要线性化；2）哪些地方需要凸化；3）计算矩阵如何构建</p>
+<!-- more -->
+<p><strong>二阶锥约束问题</strong><br>
+一般情况下，都是将优化问题转换为一个SOCP问题进行处理。在讨论具体处理方法之前，首先需要明确一个概念：到底什么是二阶锥约束？<br>
+二阶锥约束的形式可以表示如下：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow><mo fence="true">∥</mo><mi>A</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo fence="true">∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><msup><mi>c</mi><mi>T</mi></msup><mi>x</mi><mo>+</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">\left\| Ax+b \right\| _2 \le c^T x+d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0497em;vertical-align:-0.29969999999999997em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;">∥</span><span class="mord mathdefault">A</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">b</span><span class="mclose delimcenter" style="top:0em;">∥</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151408em;"><span style="top:-2.4003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29969999999999997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.924661em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span><br>
+当且仅当约束条件能够表示为这样的不等式时，才能够称之为满足二阶锥约束。在已有的文献中，对于小于号和等号的情况，都是经过变换处理，才转换为标准二阶锥约束。</p>
+<p>明确了二阶锥约束之后，下一步就是需要确定对于一个非凸的问题，如何转换为凸的问题（SOCP）进行求解。<br>
+所谓的凸化处理，针对的情况是性能函数中出现了非凸项，或者是积分形式，需要通过凸化处理转换为一个凸问题。一般常见的方法是引入一个松弛变量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>η</mi></mrow><annotation encoding="application/x-tex">\eta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">η</span></span></span></span>和一个新的状态变量。</p>
+<p>对于问题中存在的非线性项，就需要通过线性化处理，转换为一系列的SOCP问题进行迭代求解，这就需要用到序列凸优化的方法。为了确保线性化的准确性，需要引入信任域约束，保证线性化是基于第k次求解结果小范围内进行的。</p>
+<p>计算矩阵的构建的一个基本思路是：状态变量和控制变量采用向量的形式，将动力学约束方程也写为向量的形式。采用梯形公式进行离散化处理，动力学约束方程离散化为一个等式约束，并转换为标准的形式。最后考虑将所有的离散化节点上的状态变量和控制变量写为一个大的向量形式，一系列的等式约束也就可以写为一个大的矩阵等式约束的形式。</p>
+<p>接下来的工作主要是进一步检查论文中模型的处理是否正确，并转换为编程容易实现的形式。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-1yan-jiu-cheng-guo-zong-jie-1/">
+              <h3 class="post-title">
+                长航时轨迹优化问题研究（1）：研究成果总结-1
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

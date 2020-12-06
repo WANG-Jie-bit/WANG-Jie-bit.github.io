@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>定点控制问题：基本思路的梳理 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1607295344039">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1607295344039" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              定点控制问题：基本思路的梳理
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-09-22 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>定点控制问题研究已经有一段时间了，零零碎碎提出了不少想法，今天将这些想法和思路整理整理。</p>
+<!-- more -->
+<p>定点控制问题解决的是一个在风场影响下，飞艇回到设置的任务点的问题。这个问题包含制导层面和控制层面的设计问题。之前的研究和分析都是在制导层面：采用向量场制导和追踪制导律结合的方法。当飞艇远离任务点时，采用向量场制导律，飞艇会收敛到一个设计的圆轨迹上，这一部分内容通过仿真实验进行了验证和分析。向量场制导律一般是用在unrecoverable的情况，因为这种情况下是无法直接通过追踪法制导律使得飞艇到达任务点。对于recoverable的情况，可以采用追踪法制导律，使得飞艇能够顺利到达任务点，并满足速度方向要求。<br>
+之后，主要的工作就是对recoverable和unrecoverable两种情况进行区分。之前的设想是考虑飞艇已经收敛到圆轨迹的基础上，考虑何时进入定点制导模式的问题。这个问题其实也可以进一步扩展，将recoverable的区域定义为满足位置条件（飞艇位于下方），且航向偏差小于90°。如果不满足设定的条件，那么飞艇进入unrecoverable模式，通过向量场制导律进行位置和航向的调整，直至满足recoverable条件。<br>
+当前，控制层面直接采用反步法进行控制，制导层面需要进行进一步的验证工作：<br>
+1）定点制导结果验证<br>
+2）切换点定点制导结果验证<br>
+3）unrecoverable情况下的复合制导律验证</p>
+<p>至此，基本制导律的研究工作结束。接下来就是重点研究跟踪算法，初步打算采用强化学习的方法实现。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/zhuan-ye-zhi-shi-fu-xi-17ban-shi-wu-fang-zhen-xi-tong-zhong-xiang-si-yuan-li/">
+              <h3 class="post-title">
+                精工：专业知识复习（19）
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

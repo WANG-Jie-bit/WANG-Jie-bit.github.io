@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>近似动态规划-强化学习的数学实现与思考 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1607295344039">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1607295344039" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              近似动态规划-强化学习的数学实现与思考
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-09-15 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>之前一段时间较为细致地研究过强化学习，后来不知因为什么原因而中断了，目前想继续从这个角度写一篇论文。首先还是对之前的理论学习做一个简短的总结。</p>
+<!-- more -->
+<p>重点参考的是《Reinforcement Learning for Optimal Feedback Control》一文，学习的方法也是一种基于模型的控制方法。该方法一般会和自适应控制结合起来，通过辨识实现对于模型不确定性问题的分析。这里先不重点考虑这一部分的内容，假设模型是精确的，并且已知。研究的重点放在两个核心的问题：如何得到最优控制量？如何应用到具体的问题？</p>
+<p><strong>值迭代和策略迭代</strong><br>
+什么是值迭代，什么是策略迭代，这两者分别适用于什么情况？<br>
+策略迭代是指策略评估和策略改进之间进行不断迭代，直至找到最优的策略。（策略评估是确定值函数）<br>
+文章中指出：几乎所有的基于动态规划的近似最优控制方法都可以归结为策略迭代。</p>
+<p>值迭代是不断更新值函数（更新的方程就是HJB方程），然后通过值函数求解出最优策略，适合离散时间系统。</p>
+<p><strong>基本理论分析</strong><br>
+基于神经网络来近似值函数和最优策略。这里的值函数定义为代价函数的积分值。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://wang-jie-bit.github.io/zhuan-li-zhuan-xie-de-chu-bu-she-xiang/">
+              <h3 class="post-title">
+                专利撰写的初步设想
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>面试准备（11）：研究中的创新点提炼 | 思源</title>
+<link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1607295344039">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wang-jie-bit.github.io">
+  <img class="avatar" src="https://wang-jie-bit.github.io/images/avatar.png?v=1607295344039" alt="">
+  </a>
+  <h1 class="site-title">
+    思源
+  </h1>
+  <p class="site-description">
+    思考是创新的源泉
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              面试准备（11）：研究中的创新点提炼
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-11-11 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>在面试的时候，一个很常见的问题就是询问研究中有什么创新点吗，或者是与之前的研究工作相比，有哪些贡献？这样的问题就是面试官在考察面试者的创新能力，也是进一步了解面试者科研工作中解决问题能力的一种途径。这里将之前研究工作中的创新点进行总结和提炼。</p>
+<!-- more -->
+<p>课题的研究工作是针对特定的问题展开的研究工作，在方法理论方面，可能更多的情况是在分析问题特点的基础上，对成熟的理论进行适当的修正，应用到具体的问题中。<br>
+比如，<br>
+1、上升<br>
+在研究平流层飞艇上升阶段的浮心计算问题中，其实这是一个很成熟的问题，采用一些商业软件就能够解决。但是问题在于，这个问题本身是简单的，但是考虑到上升过程是一个动态的过程，需要实时根据飞艇的姿态和内部气体的含量，给出浮心的位置，这是采用商业软件办不到的。在这个问题中，采用了一种截面法，首先计算在截面内浮心的位置，然后通过积分的办法得到总浮心的位置，本质上是一个质心计算的几何问题，但是与之前的相比可能更加复杂，甚至难以积分，这个问题中的积分就是通过数值的办法实现。<br>
+2、驻留<br>
+在驻留期间，考虑热力学的影响，浮力和重力可能不平衡。那么，为了保证飞艇的正常工作，需要通过推力补偿。这样就涉及到能量消耗的问题。<br>
+3、轨迹优化<br>
+轨迹优化问题中，研究的也是一个比较特殊的问题。在驻留期间，有可能风太大，将飞艇吹出驻留区域，等风场稳定之后，需要考虑飞艇如何回到驻留区域的飞行轨迹优化问题。在这个问题的研究中，主要是考虑了平流层飞艇的背部安装有太阳能电池，在飞向驻留区域的过程中的太阳能的利用问题。方法上采用的是一种自适应伪谱法，将轨迹优化问题离散化（LGR），转换为非线性规划问题，采用现成的非线性规划计算软件实现求解。当求解精度不满足设定值时，需要通过增加多项式的阶次或者细分区间的办法，提高求解精度。这里采用的是一种ph自适应伪谱法，意思是首先增加多项式阶次，如果达到设定的最大阶次仍然无法满足求解精度，就细分网格。我在这里所做的工作是，在前人的研究中，网格细分是等间距的，我这里引入了曲率，在曲率大的地方，区间长度小一点，在曲率小的地方，区间长度大一点。这样，在一定程度上，能够提高求解效率。<br>
+4、定点<br>
+主要是针对时变风场对于飞艇运动的影响进行研究。通过设计一种带有状态估计反馈的扰动观测器来对风场的影响进行估计，然后在制导律设计中进行补偿。因为在传统的非线性扰动观测器的设计中，通过研究发现，其本质上可以理解为一个一阶系统，输入是扰动，输出是扰动的估计。在研究中发现，如果将状态也进行估计，状态估计误差以反馈的形式引入到观测器设计中，能够引入一条反馈回路，进一步提高观测器的观测能力。</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+
+        
+    
+        <div class="site-footer">
+  
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
