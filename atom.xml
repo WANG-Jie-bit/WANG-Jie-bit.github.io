@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-12-07T01:07:26.044Z</updated>
+    <updated>2020-12-08T00:45:42.480Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://wang-jie-bit.github.io/images/avatar.png</logo>
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
+    <entry>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（5）：轨迹优化问题归纳]]></title>
+        <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-5gui-ji-you-hua-wen-ti-gui-na/</id>
+        <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-5gui-ji-you-hua-wen-ti-gui-na/">
+        </link>
+        <updated>2020-12-08T00:07:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>上一节检查了线性化公式，接下来将重点关注轨迹优化问题的构建。其中，梳理清楚所有的约束方程和性能函数是主要任务。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上一节检查了线性化公式，接下来将重点关注轨迹优化问题的构建。其中，梳理清楚所有的约束方程和性能函数是主要任务。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[长航时轨迹优化问题研究（4）：论文模型推导核查-3]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-4lun-wen-mo-xing-tui-dao-he-cha-3/</id>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>在之前的基本设想的基础上，开始初步研究专利中涉及到的核心技术。之后，多阅读几篇专利的写作，再开始尝试写作。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>在之前的基本设想的基础上，开始初步研究专利中涉及到的核心技术。之后，多阅读几篇专利的写作，再开始尝试写作。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[定点控制问题：基本思路的梳理]]></title>
-        <id>https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-ji-ben-si-lu-de-shu-li/</id>
-        <link href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-ji-ben-si-lu-de-shu-li/">
-        </link>
-        <updated>2020-09-22T12:08:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>定点控制问题研究已经有一段时间了，零零碎碎提出了不少想法，今天将这些想法和思路整理整理。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>定点控制问题研究已经有一段时间了，零零碎碎提出了不少想法，今天将这些想法和思路整理整理。</p>
 ]]></content>
     </entry>
 </feed>
