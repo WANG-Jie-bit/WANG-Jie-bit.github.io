@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>专利撰写：核心技术初步研究 | 思源</title>
+<title>长航时轨迹优化问题研究（7）：离散化方法 | 思源</title>
 <link rel="shortcut icon" href="https://wang-jie-bit.github.io/favicon.ico?v=1607480481946">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://wang-jie-bit.github.io/styles/main.css">
@@ -64,26 +64,20 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              专利撰写：核心技术初步研究
+              长航时轨迹优化问题研究（7）：离散化方法
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2020-09-30 ·
+                · 2020-12-09 ·
               </time>
               
             </div>
             
             <div class="post-content">
-              <p>在之前的基本设想的基础上，开始初步研究专利中涉及到的核心技术。之后，多阅读几篇专利的写作，再开始尝试写作。</p>
+              <p>上一节基本完成了对于轨迹优化问题的归纳，接下来将继续论文中的未完成工作。首先需要考虑的问题就是离散化处理。</p>
 <!-- more -->
-<p>前向距离是影响LOS制导律的一个关键参数，设计一个前向距离的变化规律，当飞行器距离期望路径较远时，采用较小的前向距离，飞行器快速接近期望路径；当飞行器逐渐靠近期望路径时，采用较大的前向距离，飞行器缓慢调整位置，逐渐收敛至期望的路径上。</p>
-<p>最为核心的技术就是前向距离的调整规律。初步的想法时采用S型函数，该函数设计为距离期望路径偏差的函数形式。</p>
-<p>需要考虑的准备工作如下：<br>
-1）模型的考虑<br>
-采用水平面内的运动模型<br>
-2）设计基本的LOS制导律<br>
-3）考虑采用可调节前向距离的LOS制导律<br>
-4） 比较与分析</p>
+<p>归纳得到一个连续的二阶锥规划问题，需要通过离散化处理，然后才能够采用软件进行求解。离散化的方法拟采用梯形公式。<br>
+离散化处理的结果是将微分方程约束转换为等式约束，关键问题是处理好多状态变量与多节点的关系。这一部分内容在论文中仍然属于未完成的部分，在这里就不进行详细的分析了，直接在论文中阐述。</p>
 
             </div>
           </article>
@@ -92,9 +86,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://wang-jie-bit.github.io/ding-dian-kong-zhi-wen-ti-ji-ben-si-lu-de-shu-li/">
+            <a href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-5gui-ji-you-hua-wen-ti-gui-na/">
               <h3 class="post-title">
-                定点控制问题：基本思路的梳理
+                长航时轨迹优化问题研究（6）：轨迹优化问题归纳
               </h3>
             </a>
           </div>  

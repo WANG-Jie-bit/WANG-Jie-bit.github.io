@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wang-jie-bit.github.io</id>
     <title>思源</title>
-    <updated>2020-12-08T00:45:42.480Z</updated>
+    <updated>2020-12-09T02:21:38.821Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wang-jie-bit.github.io"/>
     <link rel="self" href="https://wang-jie-bit.github.io/atom.xml"/>
@@ -11,7 +11,18 @@
     <icon>https://wang-jie-bit.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 思源</rights>
     <entry>
-        <title type="html"><![CDATA[长航时轨迹优化问题研究（5）：轨迹优化问题归纳]]></title>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（7）：离散化方法]]></title>
+        <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-6chi-san-hua-fang-fa/</id>
+        <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-6chi-san-hua-fang-fa/">
+        </link>
+        <updated>2020-12-09T02:08:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>上一节基本完成了对于轨迹优化问题的归纳，接下来将继续论文中的未完成工作。首先需要考虑的问题就是离散化处理。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上一节基本完成了对于轨迹优化问题的归纳，接下来将继续论文中的未完成工作。首先需要考虑的问题就是离散化处理。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（6）：轨迹优化问题归纳]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-5gui-ji-you-hua-wen-ti-gui-na/</id>
         <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-5gui-ji-you-hua-wen-ti-gui-na/">
         </link>
@@ -22,7 +33,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[长航时轨迹优化问题研究（4）：论文模型推导核查-3]]></title>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（5）：论文模型推导核查-3]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-4lun-wen-mo-xing-tui-dao-he-cha-3/</id>
         <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-4lun-wen-mo-xing-tui-dao-he-cha-3/">
         </link>
@@ -33,7 +44,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[长航时轨迹优化问题研究（3）：论文模型推导核查-2]]></title>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（4）：论文模型推导核查-2]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-3lun-wen-mo-xing-tui-dao-he-cha/</id>
         <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-3lun-wen-mo-xing-tui-dao-he-cha/">
         </link>
@@ -44,7 +55,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[长航时轨迹优化问题研究（2）：论文模型推导核查-1]]></title>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（3）：论文模型推导核查-1]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-2lun-wen-mo-xing-tui-dao-he-cha/</id>
         <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-yan-jiu-2lun-wen-mo-xing-tui-dao-he-cha/">
         </link>
@@ -55,7 +66,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[长航时轨迹优化问题研究（1）：研究成果总结-2]]></title>
+        <title type="html"><![CDATA[长航时轨迹优化问题研究（2）：研究成果总结-2]]></title>
         <id>https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-2/</id>
         <link href="https://wang-jie-bit.github.io/chang-hang-shi-gui-ji-you-hua-wen-ti-2/">
         </link>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>首先考虑固定前向距离可能引起的问题，然后引入前向距离自适应机制，并分析其效果。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>首先考虑固定前向距离可能引起的问题，然后引入前向距离自适应机制，并分析其效果。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[专利撰写：核心技术初步研究]]></title>
-        <id>https://wang-jie-bit.github.io/zhuan-li-zhuan-xie-he-xin-ji-zhu-chu-bu-yan-jiu/</id>
-        <link href="https://wang-jie-bit.github.io/zhuan-li-zhuan-xie-he-xin-ji-zhu-chu-bu-yan-jiu/">
-        </link>
-        <updated>2020-09-30T06:58:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>在之前的基本设想的基础上，开始初步研究专利中涉及到的核心技术。之后，多阅读几篇专利的写作，再开始尝试写作。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在之前的基本设想的基础上，开始初步研究专利中涉及到的核心技术。之后，多阅读几篇专利的写作，再开始尝试写作。</p>
 ]]></content>
     </entry>
 </feed>
